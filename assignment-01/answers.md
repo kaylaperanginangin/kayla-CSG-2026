@@ -25,5 +25,21 @@ Jawaban: Pernyataan temanku itu salah konsep. Heisenberg Uncertainty Principle (
 
 Jawaban: Menurut rumus de Broglie, setiap benda yang bergerak memang punya panjang gelombang sebesar $\lambda = h/p = h/(mv)$. Masalahnya, konstanta Planck ($h = 6.626 \times 10^{-34}\ \text{J}\cdot\text{s}$) itu nilainya luar biasa kecil, sedangkan bola punya massa ($m$) yang sangat besar kalau dibandingkan dengan partikel subatomik. Kalau dihitung, panjang gelombang de Broglie dari bola yang kita lempar itu ukurannya sekitar $\sim 10^{-34}\ \text{m}$, jauh lebih kecil triliunan kali lipat daripada lebar pintu. Karena syarat terjadinya difraksi/interferensi gelombang adalah ukuran celah harus sebanding dengan panjang gelombangnya, maka sifat gelombang bola sama sekali nggak kelihatan di dunia sehari-hari.
 
+## Task 2 — Perhitungan
+Daftar Konstanta yang Digunakan:   
+$h = 6.626 \times 10^{-34}\ \text{J}\cdot\text{s}$   $\hbar = 1.055 \times 10^{-34}\ \text{J}\cdot\text{s}$   $c = 3.00 \times 10^{8}\ \text{m/s}$   $e = 1.602 \times 10^{-19}\ \text{C}$ (di mana $1\ \text{eV} = 1.602 \times 10^{-19}\ \text{J}$)   $m_e = 9.109 \times 10^{-31}\ \text{kg}$   $m_n = 1.675 \times 10^{-27}\ \text{kg}$
 
+1. **Energi foton.** Sebuah laser pointer merah memancarkan cahaya $\lambda = 650$ nm dengan daya 5 mW.
+   - (a) Berapa energi satu foton dalam joule dan eV?
+   - (b) Berapa jumlah foton yang dipancarkan per detik?
+
+Jawaban:
+
+Diketahui:
+Panjang gelombang: $\lambda = 650\ \text{nm} = 6.50 \times 10^{-7}\ \text{m}$   
+Daya laser: $P = 5\ \text{mW} = 5 \times 10^{-3}\ \text{W} = 5 \times 10^{-3}\ \text{J/s}$
+
+- (a) Energi satu foton dalam Joule dan eV:
+$$E = \frac{hc}{\lambda}$$
+$$E = \frac{(6.626 \times 10^{-34}\ \text{J}\cdot\text{s})(3.00 \times 10^{8}\ \text{m/s})}{6.50 \times 10^{-7}\ \text{m}}$$$$E = \frac{1.9878 \times 10^{-25}\ \text{J}\cdot\text{m}}{6.50 \times 10^{-7}\ \text{m}} = \mathbf{3.058 \times 10^{-19}\ \text{J}}$$
 
