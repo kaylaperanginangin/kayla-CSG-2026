@@ -36,10 +36,80 @@ $h = 6.626 \times 10^{-34}\ \text{J}\cdot\text{s}$   $\hbar = 1.055 \times 10^{-
 Jawaban:
 
 Diketahui:
-Panjang gelombang: $\lambda = 650\ \text{nm} = 6.50 \times 10^{-7}\ \text{m}$   
-Daya laser: $P = 5\ \text{mW} = 5 \times 10^{-3}\ \text{W} = 5 \times 10^{-3}\ \text{J/s}$
+- Panjang gelombang: $\lambda = 650\ \text{nm} = 6.50 \times 10^{-7}\ \text{m}$   
+- Daya laser: $P = 5\ \text{mW} = 5 \times 10^{-3}\ \text{W} = 5 \times 10^{-3}\ \text{J/s}$
 
-- (a) Energi satu foton dalam Joule dan eV:
-$$E = \frac{hc}{\lambda}$$
-$$E = \frac{(6.626 \times 10^{-34}\ \text{J}\cdot\text{s})(3.00 \times 10^{8}\ \text{m/s})}{6.50 \times 10^{-7}\ \text{m}}$$$$E = \frac{1.9878 \times 10^{-25}\ \text{J}\cdot\text{m}}{6.50 \times 10^{-7}\ \text{m}} = \mathbf{3.058 \times 10^{-19}\ \text{J}}$$
+(a) Energi satu foton dalam Joule dan eV:
+- $$E = \frac{hc}{\lambda}$$
+- $E = \frac{(6.626 \times 10^{-34}\ \text{J}\cdot\text{s})(3.00 \times 10^{8}\ \text{m/s})}{6.50 \times 10^{-7}\ \text{m}}$
+- $E = 3.058 \times 10^{-19}\ \text{J}$
+- $E\ (\text{eV}) = \frac{3.058 \times 10^{-19}\ \text{J}}{1.602 \times 10^{-19}\ \text{J/eV}} = \mathbf{1.909\ \text{eV}}$
 
+(b) Jumlah foton yang dipancarkan per detik ($N$):
+- $N = \frac{P}{E}$
+- $N = \frac{5 \times 10^{-3}\ \text{J/s}}{3.058 \times 10^{-19}\ \text{J/foton}} = \mathbf{1.635 \times 10^{16}\ \text{foton/detik}}$
+
+2. **Photoelectric effect.** Natrium memiliki work function $\phi = 2.28$ eV.
+   - (a) Berapa panjang gelombang ambang (threshold) untuk natrium?
+   - (b) Jika disinari cahaya $\lambda = 400$ nm, berapa energi kinetik maksimum elektron yang terlepas (dalam eV)?
+   - (c) Berapa stopping potential yang diperlukan untuk menghentikan elektron tersebut?
+   - (d) Apakah cahaya $\lambda = 600$ nm dapat melepaskan elektron? Jelaskan.
+
+Jawaban:
+
+Diketahui:
+- Work function natrium: $\phi = 2.28\ \text{eV}$
+
+(a) Panjang gelombang ambang ($\lambda_0$):
+- $\phi = 2.28\ \text{eV} \times 1.602 \times 10^{-19}\ \text{J/eV} = 3.6526 \times 10^{-19}\ \text{J}$
+- $\lambda_0 = \frac{hc}{\phi}$
+- $\lambda_0 = \frac{(6.626 \times 10^{-34}\ \text{J}\cdot\text{s})(3.00 \times 10^{8}\ \text{m/s})}{3.6526 \times 10^{-19}\ \text{J}}$
+- $\lambda_0 = 5.442 \times 10^{-7}\ \text{m} = \mathbf{544.2\ \text{nm}}$
+
+(b) Energi kinetik maksimum elektron ($K_{\max}$) saat disinari $\lambda = 400\ \text{nm}$:
+- $E = \frac{hc}{\lambda \cdot e} = \frac{1.9878 \times 10^{-25}\ \text{J}\cdot\text{m}}{(4.00 \times 10^{-7}\ \text{m})(1.602 \times 10^{-19}\ \text{J/eV})} = 3.102\ \text{eV}$
+- $K_{\max} = E - \phi$
+- $K_{\max} = 3.102\ \text{eV} - 2.28\ \text{eV} = \mathbf{0.822\ \text{eV}}$
+
+(c) Stopping potential ($V_{\text{stop}}$):
+- $V_{\text{stop}} = \frac{K_{\max}}{e}$
+- $V_{\text{stop}} = \frac{0.822\ \text{eV}}{e} = \mathbf{0.822\ \text{V}}$
+
+(d) Apakah cahaya $\lambda = 600\ \text{nm}$ bisa melepaskan elektron?
+- Tidak bisa. Foton $600\ \text{nm}$ hanya memiliki energi $E \approx 1240 / 600 = 2.067\ \text{eV}$, yang mana lebih kecil dari work function natrium sebesar $\phi = 2.28\ \text{eV}$. Selain itu, $\lambda = 600\ \text{nm}$ lebih besar dari panjang gelombang ambang natrium ($\lambda_0 = 544.2\ \text{nm}$), yang berarti frekuensinya lebih rendah dari frekuensi ambang.
+
+3. **de Broglie wavelength.**
+   - (a) Pada eksperimen Davisson–Germer (1927), elektron dipercepat dengan beda potensial 54 V. Hitung panjang gelombang de Broglie-nya.
+   - (b) Hitung panjang gelombang de Broglie neutron termal yang bergerak dengan kecepatan 2200 m/s.
+   - (c) Bandingkan hasil (a) dan (b) dengan jarak antar-atom pada kristal ($\sim 0.1$–$0.3$ nm). Apa implikasinya?
+  
+Jawaban:
+
+(a) Elektron pada eksperimen Davisson–Germer ($\Delta V = 54\ \text{V}$):
+- $K = 54\ \text{eV} \times 1.602 \times 10^{-19}\ \text{J/eV} = 8.6508 \times 10^{-18}\ \text{J}$
+- $p = \sqrt{2 m_e K} = \sqrt{2 (9.109 \times 10^{-31}\ \text{kg})(8.6508 \times 10^{-18}\ \text{J})} = 3.970 \times 10^{-24}\ \text{kg}\cdot\text{m/s}$
+- $\lambda_e = \frac{h}{p} = \frac{6.626 \times 10^{-34}\ \text{J}\cdot\text{s}}{3.970 \times 10^{-24}\ \text{kg}\cdot\text{m/s}} = 1.669 \times 10^{-10}\ \text{m} = \mathbf{0.167\ \text{nm}}$
+
+(b) Neutron termal ($v = 2200\ \text{m/s}$):
+- $p = m_n v = (1.675 \times 10^{-27}\ \text{kg})(2200\ \text{m/s}) = 3.685 \times 10^{-24}\ \text{kg}\cdot\text{m/s}$
+- $\lambda_n = \frac{h}{p} = \frac{6.626 \times 10^{-34}\ \text{J}\cdot\text{s}}{3.685 \times 10^{-24}\ \text{kg}\cdot\text{m/s}} = 1.798 \times 10^{-10}\ \text{m} = \mathbf{0.180\ \text{nm}}$
+
+(c) Perbandingan dengan jarak antar-atom kristal ($\sim 0.1\text{–}0.3\ \text{nm}$) & Implikasinya:
+- Hasil (a) dan (b) menunjukkan panjang gelombang yang seukuran dengan jarak antar-atom pada kisi kristal. Implikasinya, susunan atom di dalam kristal dapat berfungsi sebagai kisi difraksi. Hal ini memungkinkan berkas elektron dan neutron mengalami interferensi konstruktif atau destruktif, yang dapat dimanfaatkan untuk memetakan struktur atom material.
+
+4. **Uncertainty principle.**
+   - (a) Sebuah elektron dibatasi dalam daerah selebar 1 nm. Hitung ketidakpastian minimum momentum dan kecepatannya.
+   - (b) Lakukan perhitungan yang sama untuk sebuah debu bermassa $10^{-9}$ kg yang posisinya diketahui dengan ketelitian 1 µm. Bandingkan dan beri komentar.
+  
+Jawaban:
+
+(a) Elektron di daerah selebar $\Delta x = 1\ \text{nm} = 1.0 \times 10^{-9}\ \text{m}$:
+- $\Delta p_{\min} = \frac{\hbar}{2\Delta x} = \frac{1.055 \times 10^{-34}\ \text{J}\cdot\text{s}}{2 (1.0 \times 10^{-9}\ \text{m})} = \mathbf{5.275 \times 10^{-26}\ \text{kg}\cdot\text{m/s}}$
+- $\Delta v_{\min} = \frac{\Delta p_{\min}}{m_e} = \frac{5.275 \times 10^{-26}\ \text{kg}\cdot\text{m/s}}{9.109 \times 10^{-31}\ \text{kg}} = \mathbf{5.791 \times 10^{4}\ \text{m/s}}\ (\approx 57.9\ \text{km/s})$
+
+(b) Partikel debu ($m = 10^{-9}\ \text{kg}$) dengan ketelitian $\Delta x = 1\ \mu\text{m} = 1.0 \times 10^{-6}\ \text{m}$:
+- $\Delta p_{\min} = \frac{\hbar}{2\Delta x} = \frac{1.055 \times 10^{-34}\ \text{J}\cdot\text{s}}{2 (1.0 \times 10^{-6}\ \text{m})} = \mathbf{5.275 \times 10^{-29}\ \text{kg}\cdot\text{m/s}}$
+- $\Delta v_{\min} = \frac{\Delta p_{\min}}{m} = \frac{5.275 \times 10^{-29}\ \text{kg}\cdot\text{m/s}}{10^{-9}\ \text{kg}} = \mathbf{5.275 \times 10^{-20}\ \text{m/s}}$
+
+Perbandingan dan Komentar:
+- Terdapat perbedaan yang sangat ekstrem. Elektron yang dibatasi pada skala nanometer memiliki ketidakpastian kecepatan yang sangat besar, mencapai hampir $58\ \text{km/s}$. Sebaliknya, partikel debu memiliki ketidakpastian kecepatan yang sangat kecil ($\sim 10^{-20}\ \text{m/s}$), yang secara praktis bernilai nol. Hal ini menunjukkan bahwa efek ketidakpastian kuantum sangat mendominasi partikel di skala atomik, namun tidak teramati pada benda berskala makroskopis.
