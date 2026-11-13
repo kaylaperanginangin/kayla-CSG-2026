@@ -1,6 +1,4 @@
 ## Task 1 — Conceptual Questions
-
-Jawab dengan kata-kata Anda sendiri (3–6 kalimat per soal).
 1. Apa yang dimaksud dengan *ultraviolet catastrophe*, dan bagaimana hipotesis Planck menyelesaikannya?
 
 Jawaban: Ultraviolet catastrophe itu pada dasarnya adalah kegagalan fisika klasik (rumus Rayleigh–Jeans) waktu mencoba menjelaskan radiasi benda hitam. Menurut perhitungan klasik, energi radiasi yang dipancarkan benda hitam bakal terus naik menuju tak hingga ($\infty$) saat panjang gelombangnya makin pendek (ke arah daerah ultraviolet), yang jelas-jelas nggak masuk akal karena di eksperimen kurvanya justru memuncak lalu turun ke nol. Nah, Max Planck akhirnya menyelesaikan masalah ini lewat hipotesisnya bahwa energi osilator itu nggak kontinu, melainkan terkuantisasi dalam "paket-paket" diskrit sebesar $E = nh\nu$. Karena butuh energi yang besar banget untuk memancarkan foton berfrekuensi tinggi (panjang gelombang pendek), peluang osilator untuk teraktivasi di area UV jadi sangat kecil, sehingga kurva radiasinya otomatis turun kembali ke nol sesuai hasil observasi.
