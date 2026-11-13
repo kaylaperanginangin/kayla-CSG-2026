@@ -1,285 +1,143 @@
 # Task 1 — Bilangan Kompleks
 
-Dik:
+Diketahui:
 
 $$
-z_1=1+i,\qquad z_2=\sqrt{3}-i
+z_1 = 1 + i, \qquad z_2 = \sqrt{3} - i
 $$
 
-## 1 Hitung $z_1+z_2$, $z_1z_2$, $z_1^\*$, dan $z_1/z_2$
+## 1. Hitung $z_1 + z_2$, $z_1 z_2$, $z_1^*$, dan $z_1 / z_2$
 
-### a. Penjumlahan $z_1+z_2$
-
-$$
-\begin{aligned}
-z_1+z_2
-&=(1+i)+(\sqrt{3}-i)\\
-&=1+\sqrt{3}+i-i\\
-&=\boxed{1+\sqrt{3}}
-\end{aligned}
-$$
-
-### b. Perkalian $z_1z_2$
+### a. Penjumlahan $z_1 + z_2$
 
 $$
 \begin{aligned}
-z_1z_2
-&=(1+i)(\sqrt{3}-i)\\
-&=\sqrt{3}-i+i\sqrt{3}-i^2
+z_1 + z_2 &= (1 + i) + (\sqrt{3} - i) \\
+&= (1 + \sqrt{3}) + (1 - 1)i \\
+&= \boxed{1 + \sqrt{3}}
 \end{aligned}
 $$
 
-Karena $i^2=-1$, maka:
+### b. Perkalian $z_1 z_2$
+
+Ingat bahwa $i^2 = -1$, sehingga:
 
 $$
 \begin{aligned}
-z_1z_2
-&=\sqrt{3}-i+i\sqrt{3}+1\\
-&=(\sqrt{3}+1)+(\sqrt{3}-1)i
+z_1 z_2 &= (1 + i)(\sqrt{3} - i) \\
+&= \sqrt{3} - i + i\sqrt{3} - i^2 \\
+&= \sqrt{3} - i + i\sqrt{3} - (-1) \\
+&= \boxed{(\sqrt{3} + 1) + (\sqrt{3} - 1)i}
 \end{aligned}
 $$
 
-$$
-\boxed{z_1z_2=(\sqrt{3}+1)+(\sqrt{3}-1)i}
-$$
+### c. Konjugat kompleks $z_1^*$
 
-### c. Konjugat kompleks $z_1^\*$
+Untuk $z = a + bi$, konjugatnya adalah $z^* = a - bi$:
 
 $$
-z_1=1+i
+z_1 = 1 + i \;\Rightarrow\; \boxed{z_1^* = 1 - i}
 $$
 
-$$
-\boxed{z_1^\*=1-i}
-$$
+### d. Pembagian $z_1 / z_2$
 
-### d. Pembagian $z_1/z_2$
+Kalikan pembilang dan penyebut dengan konjugat penyebut ($z_2^* = \sqrt{3} + i$):
 
 $$
 \begin{aligned}
-\frac{z_1}{z_2}
-&=\frac{1+i}{\sqrt{3}-i}
-\times\frac{\sqrt{3}+i}{\sqrt{3}+i}\\
-&=\frac{(1+i)(\sqrt{3}+i)}{(\sqrt{3}-i)(\sqrt{3}+i)}
+\frac{z_1}{z_2} &= \frac{1 + i}{\sqrt{3} - i} \cdot \frac{\sqrt{3} + i}{\sqrt{3} + i} \\
+&= \frac{\sqrt{3} + i + i\sqrt{3} + i^2}{(\sqrt{3})^2 - i^2} \\
+&= \frac{\sqrt{3} - 1 + (1 + \sqrt{3})i}{3 - (-1)} \\
+&= \boxed{\frac{\sqrt{3} - 1}{4} + \frac{1 + \sqrt{3}}{4}i}
 \end{aligned}
 $$
 
-Hitung pembilang:
+---
+
+## 2. Hitung $|z_1|$, $|z_2|$, dan $|z_1 z_2|$. Verifikasi bahwa $|z_1 z_2| = |z_1||z_2|$
+
+Modulus didefinisikan sebagai $|z| = \sqrt{a^2 + b^2} = \sqrt{z z^*}$:
+
+* **Modulus $z_1$:**
+  $$
+  |z_1| = \sqrt{1^2 + 1^2} = \boxed{\sqrt{2}}
+  $$
+
+* **Modulus $z_2$:**
+  $$
+  |z_2| = \sqrt{(\sqrt{3})^2 + (-1)^2} = \sqrt{3 + 1} = \boxed{2}
+  $$
+
+* **Modulus $z_1 z_2$:**
+  Dari hasil bagian 1b, $z_1 z_2 = (\sqrt{3} + 1) + (\sqrt{3} - 1)i$, sehingga:
+  $$
+  \begin{aligned}
+  |z_1 z_2| &= \sqrt{(\sqrt{3} + 1)^2 + (\sqrt{3} - 1)^2} \\
+  &= \sqrt{(3 + 2\sqrt{3} + 1) + (3 - 2\sqrt{3} + 1)} \\
+  &= \sqrt{8} = \boxed{2\sqrt{2}}
+  \end{aligned}
+  $$
+
+* **Verifikasi:**
+  $$
+  |z_1||z_2| = \sqrt{2} \cdot 2 = 2\sqrt{2} = |z_1 z_2| \quad (\text{Terbukti})
+  $$
+
+---
+
+## 3. Tuliskan $z_1$ dan $z_2$ dalam bentuk polar $r e^{i\theta}$
+
+Bentuk polar bilangan kompleks adalah $z = r e^{i\theta}$ dengan $r = |z|$ dan $\theta = \text{atan2}(b, a)$.
+
+* **Untuk $z_1 = 1 + i$:**
+  Titik $(1, 1)$ berada di Kuadran I:
+  $$
+  r_1 = \sqrt{2}, \qquad \theta_1 = \tan^{-1}\left(\frac{1}{1}\right) = \frac{\pi}{4}
+  $$
+  Maka:
+  $$
+  \boxed{z_1 = \sqrt{2}\,e^{i\pi/4}}
+  $$
+
+* **Untuk $z_2 = \sqrt{3} - i$:**
+  Titik $(\sqrt{3}, -1)$ berada di Kuadran IV:
+  $$
+  r_2 = 2, \qquad \theta_2 = \tan^{-1}\left(\frac{-1}{\sqrt{3}}\right) = -\frac{\pi}{6}
+  $$
+  Maka:
+  $$
+  \boxed{z_2 = 2\,e^{-i\pi/6}}
+  $$
+
+---
+
+## 4. Gunakan bentuk polar untuk menghitung $z_1^8$
+
+Gunakan $z_1 = \sqrt{2}\,e^{i\pi/4}$ dan formula Euler $e^{i\theta} = \cos\theta + i\sin\theta$:
 
 $$
 \begin{aligned}
-(1+i)(\sqrt{3}+i)
-&=\sqrt{3}+i+i\sqrt{3}+i^2\\
-&=\sqrt{3}-1+(1+\sqrt{3})i
+z_1^8 &= \left(\sqrt{2}\,e^{i\pi/4}\right)^8 \\
+&= (\sqrt{2})^8 \cdot e^{i(8 \cdot \pi/4)} \\
+&= 2^4 \cdot e^{i2\pi} \\
+&= 16(\cos 2\pi + i\sin 2\pi) \\
+&= 16(1 + 0) = \boxed{16}
 \end{aligned}
 $$
 
-Hitung penyebut:
+---
+
+## 5. Tunjukkan bahwa $|e^{i\theta}|^2 = 1$ untuk sembarang $\theta$ real
+
+Menggunakan formula Euler $e^{i\theta} = \cos\theta + i\sin\theta$ serta identitas $|z|^2 = z z^*$:
 
 $$
 \begin{aligned}
-(\sqrt{3}-i)(\sqrt{3}+i)
-&=(\sqrt{3})^2-i^2\\
-&=3-(-1)=4
+|e^{i\theta}|^2 &= e^{i\theta} \left(e^{i\theta}\right)^* \\
+&= (\cos\theta + i\sin\theta)(\cos\theta - i\sin\theta) \\
+&= \cos^2\theta - i^2\sin^2\theta \\
+&= \cos^2\theta + \sin^2\theta = \boxed{1}
 \end{aligned}
-$$
-
-Maka:
-
-$$
-\boxed{
-\frac{z_1}{z_2}
-=\frac{\sqrt{3}-1}{4}
-+\frac{1+\sqrt{3}}{4}i
-}
-$$
-
-## 2 Hitung $|z_1|$, $|z_2|$, dan $|z_1z_2|$
-
-Rumus modulus bilangan kompleks:
-
-$$
-|z|=\sqrt{a^2+b^2}
-$$
-
-### a. Modulus $z_1$
-
-$$
-\begin{aligned}
-|z_1|
-&=|1+i|\\
-&=\sqrt{1^2+1^2}\\
-&=\boxed{\sqrt{2}}
-\end{aligned}
-$$
-
-### b. Modulus $z_2$
-
-$$
-\begin{aligned}
-|z_2|
-&=|\sqrt{3}-i|\\
-&=\sqrt{(\sqrt{3})^2+(-1)^2}\\
-&=\sqrt{3+1}\\
-&=\boxed{2}
-\end{aligned}
-$$
-
-### c. Modulus $z_1z_2$
-
-Dari hasil nomor 1.1:
-
-$$
-z_1z_2=(\sqrt{3}+1)+(\sqrt{3}-1)i
-$$
-
-$$
-\begin{aligned}
-|z_1z_2|
-&=\sqrt{(\sqrt{3}+1)^2+(\sqrt{3}-1)^2}\\
-&=\sqrt{(4+2\sqrt{3})+(4-2\sqrt{3})}\\
-&=\sqrt{8}\\
-&=\boxed{2\sqrt{2}}
-\end{aligned}
-$$
-
-### d. Verifikasi sifat modulus perkalian
-
-$$
-|z_1||z_2|=\sqrt{2}\times 2=2\sqrt{2}
-$$
-
-Sementara itu:
-
-$$
-|z_1z_2|=2\sqrt{2}
-$$
-
-Maka:
-
-$$
-\boxed{|z_1z_2|=|z_1||z_2|}
-$$
-
-## 3 Tuliskan $z_1$ dan $z_2$ dalam bentuk polar $re^{i\theta}$.
-
-Bentuk polar bilangan kompleks:
-
-$$
-z=re^{i\theta}
-$$
-
-Dengan:
-
-$$
-r=|z|,\qquad \theta=\tan^{-1}\left(\frac{b}{a}\right)
-$$
-
-### a. Bentuk polar $z_1=1+i$
-
-Modulus:
-
-$$
-r_1=\sqrt{1^2+1^2}=\sqrt{2}
-$$
-
-Sudut:
-
-$$
-\theta_1=\tan^{-1}\left(\frac{1}{1}\right)
-=\frac{\pi}{4}
-$$
-
-Karena $z_1$ berada di kuadran I, sudutnya tetap $\pi/4$.
-
-Jadi:
-
-$$
-\boxed{z_1=\sqrt{2}e^{i\pi/4}}
-$$
-
-### b. Bentuk polar $z_2=\sqrt{3}-i$
-
-Modulus:
-
-$$
-r_2=\sqrt{(\sqrt{3})^2+(-1)^2}=2
-$$
-
-Sudut:
-
-$$
-\theta_2=\tan^{-1}\left(\frac{-1}{\sqrt{3}}\right)
-=-\frac{\pi}{6}
-$$
-
-Karena $z_2$ berada di kuadran IV, sudutnya adalah $-\pi/6$.
-
-Jadi:
-
-$$
-\boxed{z_2=2e^{-i\pi/6}}
-$$
-
-## 4 Gunakan bentuk polar untuk menghitung $z_1^{8}$
-
-Dari nomor 1.3:
-
-$$
-z_1=\sqrt{2}e^{i\pi/4}
-$$
-
-Gunakan teorema De Moivre:
-
-$$
-(re^{i\theta})^n=r^ne^{in\theta}
-$$
-
-Maka:
-
-$$
-\begin{aligned}
-z_1^8
-&=(\sqrt{2}e^{i\pi/4})^8\\
-&=(\sqrt{2})^8e^{i(8\pi/4)}\\
-&=2^4e^{i2\pi}\\
-&=16(\cos 2\pi+i\sin 2\pi)\\
-&=16(1+0i)
-\end{aligned}
-$$
-
-$$
-\boxed{z_1^8=16}
-$$
-
-## 5 Tunjukkan bahwa $|e^{i\theta}|^2 = 1$ untuk sembarang $\theta$ real.
-
-Berdasarkan formula Euler:
-
-$$
-e^{i\theta}=\cos\theta+i\sin\theta
-$$
-
-Modulus kuadrat:
-
-$$
-\begin{aligned}
-|e^{i\theta}|^2
-&=|\cos\theta+i\sin\theta|^2\\
-&=\cos^2\theta+\sin^2\theta
-\end{aligned}
-$$
-
-Menggunakan identitas trigonometri:
-
-$$
-\cos^2\theta+\sin^2\theta=1
-$$
-
-Maka:
-
-$$
-\boxed{|e^{i\theta}|^2=1}
 $$
 
 ---
@@ -289,1692 +147,405 @@ $$
 Diketahui:
 
 $$
-|a\rangle=
-\begin{pmatrix}
-1\\
-2i
-\end{pmatrix},
-\qquad
-|b\rangle=
-\begin{pmatrix}
-2\\
--i
-\end{pmatrix}
+|a\rangle = \begin{pmatrix} 1 \\ 2i \end{pmatrix}, \qquad
+|b\rangle = \begin{pmatrix} 2 \\ -i \end{pmatrix}, \qquad
+|c\rangle = \frac{1}{2}|0\rangle + \frac{\sqrt{3}}{2}e^{i\pi/4}|1\rangle
 $$
 
-$$
-|c\rangle=\frac{1}{2}|0\rangle+
-\frac{\sqrt{3}}{2}e^{i\pi/4}|1\rangle
-$$
+## 1. Tuliskan $\langle a|$ dan $\langle b|$
 
-## 1 Tuliskan $\langle a|$ dan $\langle b|$.
-
-Menurut Dirac notation, bra merupakan conjugate transpose dari ket:
+Bra adalah *conjugate transpose* dari ket ($\langle\psi| = (|\psi\rangle)^*$ dalam bentuk baris):
 
 $$
-\langle\psi|=(|\psi\rangle^\dagger)
+\boxed{\langle a| = \begin{pmatrix} 1 & -2i \end{pmatrix}}, \qquad
+\boxed{\langle b| = \begin{pmatrix} 2 & i \end{pmatrix}}
 $$
 
-### a. Bra dari $|a\rangle$
+---
 
-$$
-|a\rangle=
-\begin{pmatrix}
-1\\
-2i
-\end{pmatrix}
-$$
+## 2. Hitung $\langle a|b\rangle$ dan $\langle b|a\rangle$. Verifikasi bahwa $\langle a|b\rangle = \langle b|a\rangle^*$
 
-Transpose:
-
-$$
-\begin{pmatrix}
-1&2i
-\end{pmatrix}
-$$
-
-Konjugasikan setiap elemen:
-
-$$
-\boxed{\langle a|=\begin{pmatrix}1&-2i\end{pmatrix}}
-$$
-
-### b. Bra dari $|b\rangle$
-
-$$
-|b\rangle=
-\begin{pmatrix}
-2\\
--i
-\end{pmatrix}
-$$
-
-Transpose:
-
-$$
-\begin{pmatrix}
-2&-i
-\end{pmatrix}
-$$
-
-Konjugasikan setiap elemen:
-
-$$
-\boxed{\langle b|=\begin{pmatrix}2&i\end{pmatrix}}
-$$
-
-## 2 Hitung $\langle a|b\rangle$ dan $\langle b|a\rangle$. Verifikasi bahwa $\langle a|b\rangle = \langle b|a\rangle^*$.
-
-Rumus inner product:
-
-$$
-\langle a|b\rangle=a_1^*b_1+a_2^*b_2
-$$
-
-### a. Menghitung $\langle a|b\rangle$
+Menggunakan rumus $\langle\phi|\psi\rangle = \phi_1^*\psi_1 + \phi_2^*\psi_2$:
 
 $$
 \begin{aligned}
-\langle a|b\rangle
-&=\begin{pmatrix}1&-2i\end{pmatrix}
-\begin{pmatrix}2\\-i\end{pmatrix}\\
-&=(1)(2)+(-2i)(-i)\\
-&=2+2i^2\\
-&=2-2\\
-&=\boxed{0}
+\langle a|b\rangle &= \begin{pmatrix} 1 & -2i \end{pmatrix} \begin{pmatrix} 2 \\ -i \end{pmatrix} = (1)(2) + (-2i)(-i) = 2 + 2i^2 = 2 - 2 = \boxed{0} \\
+\langle b|a\rangle &= \begin{pmatrix} 2 & i \end{pmatrix} \begin{pmatrix} 1 \\ 2i \end{pmatrix} = (2)(1) + (i)(2i) = 2 + 2i^2 = 2 - 2 = \boxed{0}
 \end{aligned}
 $$
 
-### b. Menghitung $\langle b|a\rangle$
+**Verifikasi:**
 
 $$
-\begin{aligned}
-\langle b|a\rangle
-&=\begin{pmatrix}2&i\end{pmatrix}
-\begin{pmatrix}1\\2i\end{pmatrix}\\
-&=(2)(1)+(i)(2i)\\
-&=2+2i^2\\
-&=2-2\\
-&=\boxed{0}
-\end{aligned}
+\langle b|a\rangle^* = 0^* = 0 = \langle a|b\rangle \quad (\text{Terbukti})
 $$
 
-### c. Verifikasi sifat inner product
+---
 
-Sifat inner product:
+## 3. Apakah $|a\rangle$ dan $|b\rangle$ ortogonal?
 
-$$
-\langle a|b\rangle=\langle b|a\rangle^\*
-$$
-
-Karena:
-
-$$
-\langle a|b\rangle=0
-$$
-
-dan:
-
-$$
-\langle b|a\rangle^_=0^_=0
-$$
-
-Maka:
-
-$$
-\boxed{\langle a|b\rangle=\langle b|a\rangle^\*}
-$$
-
-## 3 Apakah $|a\rangle$ dan $|b\rangle$ ortogonal?
-
-Dua state dikatakan ortogonal apabila:
-
-$$
-\langle a|b\rangle=0
-$$
-
-Dari perhitungan nomor 2.2:
-
-$$
-\langle a|b\rangle=0
-$$
-
-Jadi:
-
-$$
-\boxed{|a\rangle\text{ dan }|b\rangle\text{ saling ortogonal}}
-$$
-
-## 4 Normalisasi $|a\rangle$ dan $|b\rangle$
-
-Rumus norm:
-
-$$
-\|\psi\|=\sqrt{\langle\psi|\psi\rangle}
-$$
-
-Rumus normalisasi:
-
-$$
-|\psi\_{\text{norm}}\rangle=
-\frac{|\psi\rangle}{\|\psi\|}
-$$
-
-### a. Normalisasi $|a\rangle$
-
-$$
-\begin{aligned}
-\|a\|
-&=\sqrt{\langle a|a\rangle}\\
-&=\sqrt{(1)(1)+(-2i)(2i)}\\
-&=\sqrt{1-4i^2}\\
-&=\sqrt{1+4}\\
-&=\sqrt{5}
-\end{aligned}
-$$
-
-Maka:
-
-$$
-\begin{aligned}
-|a\_{\text{norm}}\rangle
-&=\frac{1}{\sqrt{5}}
-\begin{pmatrix}
-1\\2i
-\end{pmatrix}\\
-&=\boxed{
-\begin{pmatrix}
-\frac{1}{\sqrt{5}}\\[2pt]
-\frac{2i}{\sqrt{5}}
-\end{pmatrix}}
-\end{aligned}
-$$
-
-Verifikasi:
-
-$$
-\left\|a\_{\text{norm}}\right\|^2
-=\frac{1}{5}+\frac{4}{5}=1
-$$
-
-### b. Normalisasi $|b\rangle$
-
-$$
-\begin{aligned}
-\|b\|
-&=\sqrt{\langle b|b\rangle}\\
-&=\sqrt{(2)(2)+(i)(-i)}\\
-&=\sqrt{4-i^2}\\
-&=\sqrt{4+1}\\
-&=\sqrt{5}
-\end{aligned}
-$$
-
-Maka:
-
-$$
-\begin{aligned}
-|b\_{\text{norm}}\rangle
-&=\frac{1}{\sqrt{5}}
-\begin{pmatrix}
-2\\-i
-\end{pmatrix}\\
-&=\boxed{
-\begin{pmatrix}
-\frac{2}{\sqrt{5}}\\[2pt]
--\frac{i}{\sqrt{5}}
-\end{pmatrix}}
-\end{aligned}
-$$
-
-Verifikasi:
-
-$$
-\left\|b\_{\text{norm}}\right\|^2
-=\frac{4}{5}+\frac{1}{5}=1
-$$
-
-## 5 Apakah $|c\rangle$ sudah ternormalisasi? Hitung $P(0)$ dan $P(1)$ jika $|c\rangle$ diukur di computational basis.
-
-Dik:
-
-$$
-|c\rangle=\frac{1}{2}|0\rangle+
-\frac{\sqrt{3}}{2}e^{i\pi/4}|1\rangle
-$$
-
-Berdasarkan Born rule:
-
-$$
-P(k)=|\langle k|c\rangle|^2
-$$
-
-### a. Memeriksa apakah state sudah ternormalisasi
-
-Syarat state ternormalisasi:
-
-$$
-\langle c|c\rangle=1
-$$
-
-Dengan amplitudo:
-
-$$
-\alpha=\frac{1}{2},\qquad
-\beta=\frac{\sqrt{3}}{2}e^{i\pi/4}
-$$
-
-Maka:
+**Ya**, karena inner product keduanya bernilai nol ($\langle a|b\rangle = 0$).
 
-$$
-\begin{aligned}
-\langle c|c\rangle
-&=|\alpha|^2+|\beta|^2\\
-&=\left|\frac{1}{2}\right|^2+
-\left|\frac{\sqrt{3}}{2}e^{i\pi/4}\right|^2\\
-&=\frac{1}{4}+\frac{3}{4}|e^{i\pi/4}|^2\\
-&=\frac{1}{4}+\frac{3}{4}(1)\\
-&=1
-\end{aligned}
-$$
-
-Jadi:
-
-$$
-\boxed{|c\rangle\text{ sudah ternormalisasi}}
-$$
-
-### b. Probabilitas mendapatkan hasil $0$
-
-$$
-\begin{aligned}
-P(0)
-&=|\langle0|c\rangle|^2\\
-&=\left|\frac{1}{2}\right|^2\\
-&=\boxed{\frac{1}{4}=0{,}25=25\%}
-\end{aligned}
-$$
-
-### c. Probabilitas mendapatkan hasil $1$
-
-$$
-\begin{aligned}
-P(1)
-&=|\langle1|c\rangle|^2\\
-&=\left|\frac{\sqrt{3}}{2}e^{i\pi/4}\right|^2\\
-&=\frac{3}{4}|e^{i\pi/4}|^2\\
-&=\boxed{\frac{3}{4}=0{,}75=75\%}
-\end{aligned}
-$$
-
-Verifikasi:
-
-$$
-P(0)+P(1)=\frac{1}{4}+\frac{3}{4}=1
-$$
-
-## 6 Tuliskan $|c\rangle$ dalam **Hadamard basis** $\{|+\rangle, |-\rangle\}$, lalu hitung $P(+)$ dan $P(-)$.
-
-Hadamard basis:
-
-$$
-|+\rangle=\frac{1}{\sqrt{2}}
-\begin{pmatrix}1\\1\end{pmatrix},
-\qquad
-|-\rangle=\frac{1}{\sqrt{2}}
-\begin{pmatrix}1\\-1\end{pmatrix}
-$$
-
-State dalam basis Hadamard:
-
-$$
-|c\rangle=c*+|+\rangle+c*-|-\rangle
-$$
-
-Koefisien diperoleh menggunakan inner product:
-
-$$
-c*+=\langle+|c\rangle,\qquad
-c*-=\langle-|c\rangle
-$$
-
-### a. Menghitung koefisien $c\_+$
-
-$$
-\begin{aligned}
-c\_+
-&=\langle+|c\rangle\\
-&=\frac{1}{\sqrt{2}}
-\left(\frac{1}{2}+
-\frac{\sqrt{3}}{2}e^{i\pi/4}\right)\\
-&=\frac{1}{2\sqrt{2}}
-\left(1+\sqrt{3}e^{i\pi/4}\right)
-\end{aligned}
-$$
-
-### b. Menghitung koefisien $c\_-$
-
-$$
-\begin{aligned}
-c\_-
-&=\langle-|c\rangle\\
-&=\frac{1}{\sqrt{2}}
-\left(\frac{1}{2}-
-\frac{\sqrt{3}}{2}e^{i\pi/4}\right)\\
-&=\frac{1}{2\sqrt{2}}
-\left(1-\sqrt{3}e^{i\pi/4}\right)
-\end{aligned}
-$$
+---
 
-Jadi, representasi state dalam Hadamard basis:
+## 4. Normalisasi $|a\rangle$ dan $|b\rangle$
 
-$$
-\boxed{
-|c\rangle=
-\frac{1+\sqrt{3}e^{i\pi/4}}{2\sqrt{2}}|+\rangle
-
-- \frac{1-\sqrt{3}e^{i\pi/4}}{2\sqrt{2}}|-\rangle
-  }
-$$
-
-### c. Menghitung probabilitas $P(+)$
-
-$$
-\begin{aligned}
-P(+)
-&=|c\_+|^2\\
-&=\frac{1}{8}
-\left|1+\sqrt{3}e^{i\pi/4}\right|^2
-\end{aligned}
-$$
-
-Gunakan:
-
-$$
-|1+re^{i\theta}|^2
-=1+r^2+2r\cos\theta
-$$
-
-Sehingga:
-
-$$
-\begin{aligned}
-P(+)
-&=\frac{1}{8}
-\left(1+3+2\sqrt{3}\cos\frac{\pi}{4}\right)\\
-&=\frac{1}{8}
-\left(4+2\sqrt{3}\cdot\frac{\sqrt{2}}{2}\right)\\
-&=\boxed{\frac{4+\sqrt{6}}{8}}
-\end{aligned}
-$$
-
-Nilai pendekatan:
-
-$$
-P(+)\approx0{,}8062=80{,}62\%
-$$
-
-### d. Menghitung probabilitas $P(-)$
-
-$$
-\begin{aligned}
-P(-)
-&=|c\_-|^2\\
-&=\frac{1}{8}
-\left|1-\sqrt{3}e^{i\pi/4}\right|^2
-\end{aligned}
-$$
+Norm vektor didefinisikan sebagai $\|\psi\| = \sqrt{\langle\psi|\psi\rangle}$, dan vektor ternormalisasi adalah $\dfrac{|\psi\rangle}{\|\psi\|}$:
 
-Gunakan:
+* **Normalisasi $|a\rangle$:**
+  $$
+  \|a\| = \sqrt{\langle a|a\rangle} = \sqrt{(1)(1) + (-2i)(2i)} = \sqrt{1 - 4i^2} = \sqrt{1 + 4} = \sqrt{5}
+  $$
+  $$
+  \boxed{|a_{\text{norm}}\rangle = \frac{1}{\sqrt{5}}\begin{pmatrix} 1 \\ 2i \end{pmatrix}}
+  $$
 
-$$
-|1-re^{i\theta}|^2
-=1+r^2-2r\cos\theta
-$$
+* **Normalisasi $|b\rangle$:**
+  $$
+  \|b\| = \sqrt{\langle b|b\rangle} = \sqrt{(2)(2) + (i)(-i)} = \sqrt{4 - i^2} = \sqrt{4 + 1} = \sqrt{5}
+  $$
+  $$
+  \boxed{|b_{\text{norm}}\rangle = \frac{1}{\sqrt{5}}\begin{pmatrix} 2 \\ -i \end{pmatrix}}
+  $$
 
-Sehingga:
+---
 
-$$
-\begin{aligned}
-P(-)
-&=\frac{1}{8}
-\left(1+3-2\sqrt{3}\cos\frac{\pi}{4}\right)\\
-&=\frac{1}{8}
-\left(4-\sqrt{6}\right)\\
-&=\boxed{\frac{4-\sqrt{6}}{8}}
-\end{aligned}
-$$
+## 5. Apakah $|c\rangle$ sudah ternormalisasi? Hitung $P(0)$ dan $P(1)$ jika $|c\rangle$ diukur di computational basis
 
-Nilai pendekatan:
+* **Cek normalisasi:**
+  Syarat state ternormalisasi adalah $\langle c|c\rangle = |\alpha|^2 + |\beta|^2 = 1$:
+  $$
+  \begin{aligned}
+  \langle c|c\rangle &= \left|\frac{1}{2}\right|^2 + \left|\frac{\sqrt{3}}{2}e^{i\pi/4}\right|^2 \\
+  &= \frac{1}{4} + \frac{3}{4}\underbrace{|e^{i\pi/4}|^2}_{=1} \\
+  &= \frac{1}{4} + \frac{3}{4} = 1
+  \end{aligned}
+  $$
+  Karena $\langle c|c\rangle = 1$, maka **$|c\rangle$ sudah ternormalisasi**.
 
-$$
-P(-)\approx0{,}1938=19{,}38\%
-$$
+* **Probabilitas pengukuran (Born rule $P(k) = |\langle k|c\rangle|^2$):**
+  $$
+  \begin{aligned}
+  P(0) &= |\langle 0|c\rangle|^2 = \left|\frac{1}{2}\right|^2 = \boxed{\frac{1}{4}} \\
+  P(1) &= |\langle 1|c\rangle|^2 = \left|\frac{\sqrt{3}}{2}e^{i\pi/4}\right|^2 = \boxed{\frac{3}{4}}
+  \end{aligned}
+  $$
 
-Verifikasi:
+---
 
-$$
-\begin{aligned}
-P(+)+P(-)
-&=\frac{4+\sqrt{6}}{8}+
-\frac{4-\sqrt{6}}{8}\\
-&=\frac{8}{8}\\
-&=1
-\end{aligned}
-$$
+## 6. Tuliskan $|c\rangle$ dalam Hadamard basis $\{|+\rangle, |-\rangle\}$, lalu hitung $P(+)$ dan $P(-)$
 
-## 7 Buktikan bahwa $\{|+\rangle, |-\rangle\}$ adalah basis ortonormal.
+Diketahui $|+\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ 1 \end{pmatrix}$, $|-\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ -1 \end{pmatrix}$, dan $|c\rangle = \begin{pmatrix} \frac{1}{2} \\ \frac{\sqrt{3}}{2}e^{i\pi/4} \end{pmatrix}$.
 
-Syarat basis ortonormal:
+* **Koefisien ekspansi $|c\rangle = c_+|+\rangle + c_-|-\rangle$:**
+  $$
+  \begin{aligned}
+  c_+ &= \langle +|c\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 & 1 \end{pmatrix}\begin{pmatrix} \frac{1}{2} \\ \frac{\sqrt{3}}{2}e^{i\pi/4} \end{pmatrix} = \frac{1 + \sqrt{3}e^{i\pi/4}}{2\sqrt{2}} \\
+  c_- &= \langle -|c\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 & -1 \end{pmatrix}\begin{pmatrix} \frac{1}{2} \\ \frac{\sqrt{3}}{2}e^{i\pi/4} \end{pmatrix} = \frac{1 - \sqrt{3}e^{i\pi/4}}{2\sqrt{2}}
+  \end{aligned}
+  $$
 
-$$
-\langle e*i|e_j\rangle=\delta*{ij}
-$$
+  Sehingga dalam Hadamard basis:
+  $$
+  \boxed{|c\rangle = \frac{1 + \sqrt{3}e^{i\pi/4}}{2\sqrt{2}}|+\rangle + \frac{1 - \sqrt{3}e^{i\pi/4}}{2\sqrt{2}}|-\rangle}
+  $$
 
-### a. Membuktikan $\langle+|+\rangle=1$
+* **Probabilitas $P(+)$ dan $P(-)$:**
+  Jabarkan $e^{i\pi/4} = \cos\frac{\pi}{4} + i\sin\frac{\pi}{4} = \frac{\sqrt{2}}{2} + i\frac{\sqrt{2}}{2}$, maka $\sqrt{3}e^{i\pi/4} = \frac{\sqrt{6}}{2} + i\frac{\sqrt{6}}{2}$:
 
-$$
-\begin{aligned}
-\langle+|+\rangle
-&=\frac{1}{\sqrt{2}}(1\quad1)
-\frac{1}{\sqrt{2}}
-\begin{pmatrix}1\\1\end{pmatrix}\\
-&=\frac{1}{2}(1+1)\\
-&=\boxed{1}
-\end{aligned}
-$$
+  $$
+  \begin{aligned}
+  P(+) &= |\langle +|c\rangle|^2 = \left|\frac{\left(1 + \frac{\sqrt{6}}{2}\right) + i\frac{\sqrt{6}}{2}}{2\sqrt{2}}\right|^2 \\
+  &= \frac{\left(1 + \frac{\sqrt{6}}{2}\right)^2 + \left(\frac{\sqrt{6}}{2}\right)^2}{8} \\
+  &= \frac{1 + \sqrt{6} + \frac{6}{4} + \frac{6}{4}}{8} = \boxed{\frac{4 + \sqrt{6}}{8}} \approx 0{,}8062
+  \end{aligned}
+  $$
 
-### b. Membuktikan $\langle-|-\rangle=1$
+  $$
+  \begin{aligned}
+  P(-) &= |\langle -|c\rangle|^2 = \left|\frac{\left(1 - \frac{\sqrt{6}}{2}\right) - i\frac{\sqrt{6}}{2}}{2\sqrt{2}}\right|^2 \\
+  &= \frac{\left(1 - \frac{\sqrt{6}}{2}\right)^2 + \left(-\frac{\sqrt{6}}{2}\right)^2}{8} \\
+  &= \frac{1 - \sqrt{6} + \frac{6}{4} + \frac{6}{4}}{8} = \boxed{\frac{4 - \sqrt{6}}{8}} \approx 0{,}1938
+  \end{aligned}
+  $$
 
-$$
-\begin{aligned}
-\langle-|- \rangle
-&=\frac{1}{\sqrt{2}}(1\quad-1)
-\frac{1}{\sqrt{2}}
-\begin{pmatrix}1\\-1\end{pmatrix}\\
-&=\frac{1}{2}(1+1)\\
-&=\boxed{1}
-\end{aligned}
-$$
+---
 
-### c. Membuktikan $\langle+|-\rangle=0$
+## 7. Buktikan bahwa $\{|+\rangle, |-\rangle\}$ adalah basis ortonormal
 
-$$
-\begin{aligned}
-\langle+|-\rangle
-&=\frac{1}{2}(1\quad1)
-\begin{pmatrix}1\\-1\end{pmatrix}\\
-&=\frac{1}{2}(1-1)\\
-&=\boxed{0}
-\end{aligned}
-$$
+Syarat basis ortonormal adalah $\langle e_i|e_j\rangle = \delta_{ij}$ (norm masing-masing 1 dan saling ortogonal):
 
-Dengan demikian, kedua vektor memiliki norm 1 dan saling ortogonal.
+1. $\langle +|+\rangle = \frac{1}{2}\begin{pmatrix} 1 & 1 \end{pmatrix}\begin{pmatrix} 1 \\ 1 \end{pmatrix} = \frac{1 + 1}{2} = 1$
+2. $\langle -|-\rangle = \frac{1}{2}\begin{pmatrix} 1 & -1 \end{pmatrix}\begin{pmatrix} 1 \\ -1 \end{pmatrix} = \frac{1 + 1}{2} = 1$
+3. $\langle +|-\rangle = \frac{1}{2}\begin{pmatrix} 1 & 1 \end{pmatrix}\begin{pmatrix} 1 \\ -1 \end{pmatrix} = \frac{1 - 1}{2} = 0$
 
-$$
-\boxed{\{|+\rangle,|-\rangle\}\text{ adalah basis ortonormal}}
-$$
+Karena $\langle +|+\rangle = \langle -|-\rangle = 1$ dan $\langle +|-\rangle = \langle -|+\rangle = 0$, maka **terbukti $\{|+\rangle, |-\rangle\}$ adalah basis ortonormal**.
 
 ---
 
 # Task 3 — Operator: Hermitian, Unitary, Commutator
 
-Dik:
-
-$$
-A=\begin{pmatrix}
-2&1-i\\
-1+i&3
-\end{pmatrix}
-$$
-
-$$
-S=\begin{pmatrix}
-1&0\\
-0&i
-\end{pmatrix},
-\qquad
-B=\begin{pmatrix}
-1&1\\
-0&1
-\end{pmatrix}
-$$
-
-## 1 Hitung $A^\dagger$, $S^\dagger$, dan $B^\dagger$.
-
-Conjugate transpose atau dagger:
-
-$$
-M^\dagger=(M^\*)^T
-$$
-
-Artinya, setiap elemen dikonjugasi kemudian matriks ditranspose.
-
-### a. Menghitung $A^\dagger$
-
-$$
-A=
-\begin{pmatrix}
-2&1-i\\
-1+i&3
-\end{pmatrix}
-$$
-
-Konjugasi:
-
-$$
-A^\*=
-\begin{pmatrix}
-2&1+i\\
-1-i&3
-\end{pmatrix}
-$$
-
-Transpose:
-
-$$
-\boxed{
-A^\dagger=
-\begin{pmatrix}
-2&1-i\\
-1+i&3
-\end{pmatrix}
-}
-$$
-
-### b. Menghitung $S^\dagger$
-
-$$
-S=
-\begin{pmatrix}
-1&0\\
-0&i
-\end{pmatrix}
-$$
-
-Konjugasi:
-
-$$
-S^\*=
-\begin{pmatrix}
-1&0\\
-0&-i
-\end{pmatrix}
-$$
-
-Transpose tidak mengubah matriks diagonal.
-
-$$
-\boxed{
-S^\dagger=
-\begin{pmatrix}
-1&0\\
-0&-i
-\end{pmatrix}
-}
-$$
-
-### c. Menghitung $B^\dagger$
-
-$$
-B=
-\begin{pmatrix}
-1&1\\
-0&1
-\end{pmatrix}
-$$
-
-Karena semua elemen real, konjugasinya tidak berubah:
-
-$$
-B^\*=
-\begin{pmatrix}
-1&1\\
-0&1
-\end{pmatrix}
-$$
-
-Transpose:
-
-$$
-\boxed{
-B^\dagger=
-\begin{pmatrix}
-1&0\\
-1&1
-\end{pmatrix}
-}
-$$
-
-## 2 Tentukan mana yang Hermitian, mana yang unitary (boleh keduanya atau tidak sama sekali). Tunjukkan perhitungannya.
-
-Menurut Lesson 02:
-
-**Syarat Hermitian:**
-
-$$
-M^\dagger=M
-$$
-
-**Syarat Unitary:**
-
-$$
-M^\dagger M=MM^\dagger=I
-$$
-
-dengan:
-
-$$
-I=\begin{pmatrix}1&0\\0&1\end{pmatrix}
-$$
-
-### a. Matriks $A$
-
-**Pemeriksaan Hermitian:**
-
-$$
-A^\dagger=
-\begin{pmatrix}
-2&1-i\\
-1+i&3
-\end{pmatrix}=A
-$$
-
-Maka:
-
-$$
-\boxed{A\text{ adalah Hermitian}}
-$$
-
-**Pemeriksaan Unitary:**
-
-Karena $A^\dagger=A$, hitung $A^\dagger A=A^2$.
-
-$$
-\begin{aligned}
-A^\dagger A
-&=
-\begin{pmatrix}
-2&1-i\\
-1+i&3
-\end{pmatrix}
-\begin{pmatrix}
-2&1-i\\
-1+i&3
-\end{pmatrix}\\
-&=
-\begin{pmatrix}
-4+(1-i)(1+i)&2(1-i)+3(1-i)\\
-2(1+i)+3(1+i)&(1+i)(1-i)+9
-\end{pmatrix}\\
-&=
-\begin{pmatrix}
-6&5-5i\\
-5+5i&11
-\end{pmatrix}
-\end{aligned}
-$$
-
-Hasil tersebut tidak sama dengan matriks identitas.
-
-$$
-\boxed{A\text{ bukan Unitary}}
-$$
-
-### b. Matriks $S$
-
-**Pemeriksaan Hermitian:**
-
-$$
-S^\dagger=
-\begin{pmatrix}
-1&0\\
-0&-i
-\end{pmatrix}
-\neq
-\begin{pmatrix}
-1&0\\
-0&i
-\end{pmatrix}=S
-$$
-
-Maka:
-
-$$
-\boxed{S\text{ bukan Hermitian}}
-$$
-
-**Pemeriksaan Unitary:**
-
-$$
-\begin{aligned}
-S^\dagger S
-&=
-\begin{pmatrix}
-1&0\\
-0&-i
-\end{pmatrix}
-\begin{pmatrix}
-1&0\\
-0&i
-\end{pmatrix}\\
-&=
-\begin{pmatrix}
-1&0\\
-0&(-i)(i)
-\end{pmatrix}\\
-&=
-\begin{pmatrix}
-1&0\\
-0&1
-\end{pmatrix}\\
-&=I
-\end{aligned}
-$$
-
-Selain itu, $SS^\dagger=I$ juga berlaku.
-
-$$
-\boxed{S\text{ adalah Unitary}}
-$$
-
-### c. Matriks $B$
-
-**Pemeriksaan Hermitian:**
-
-$$
-B^\dagger=
-\begin{pmatrix}
-1&0\\
-1&1
-\end{pmatrix}
-\neq
-\begin{pmatrix}
-1&1\\
-0&1
-\end{pmatrix}=B
-$$
-
-Maka:
-
-$$
-\boxed{B\text{ bukan Hermitian}}
-$$
-
-**Pemeriksaan Unitary:**
-
-$$
-\begin{aligned}
-B^\dagger B
-&=
-\begin{pmatrix}
-1&0\\
-1&1
-\end{pmatrix}
-\begin{pmatrix}
-1&1\\
-0&1
-\end{pmatrix}\\
-&=
-\begin{pmatrix}
-1&1\\
-1&2
-\end{pmatrix}
-\end{aligned}
-$$
-
-Hasil tidak sama dengan matriks identitas.
-
-$$
-\boxed{B\text{ bukan Unitary}}
-$$
-
-### Ringkasan Task 3 nomor 2
-
-| Matriks | Hermitian | Unitary |
-| ------- | --------- | ------- |
-| $A$   | Ya        | Tidak   |
-| $S$   | Tidak     | Ya      |
-| $B$   | Tidak     | Tidak   |
-
-## 3 Hitung $S|+\rangle$. State apa yang dihasilkan? _(Hint: bandingkan dengan eigenvector Pauli Y.)_
-
 Diketahui:
 
 $$
-S=\begin{pmatrix}1&0\\0&i\end{pmatrix}
+A = \begin{pmatrix} 2 & 1 - i \\ 1 + i & 3 \end{pmatrix}, \qquad
+S = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix}, \qquad
+B = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}
 $$
 
-$$
-|+\rangle=\frac{1}{\sqrt{2}}
-\begin{pmatrix}1\\1\end{pmatrix}
-$$
+## 1. Hitung $A^\dagger$, $S^\dagger$, dan $B^\dagger$
 
-Kalikan matriks dengan vektor:
+Dengan definisi $M^\dagger = (M^*)^T$ (transpose lalu konjugasi setiap elemen):
 
-$$
-\begin{aligned}
-S|+\rangle
-&=
-\begin{pmatrix}1&0\\0&i\end{pmatrix}
-\frac{1}{\sqrt{2}}
-\begin{pmatrix}1\\1\end{pmatrix}\\
-&=\frac{1}{\sqrt{2}}
-\begin{pmatrix}
-1(1)+0(1)\\
-0(1)+i(1)
-\end{pmatrix}\\
-&=\frac{1}{\sqrt{2}}
-\begin{pmatrix}1\\i\end{pmatrix}
-\end{aligned}
-$$
+* $A^T = \begin{pmatrix} 2 & 1 + i \\ 1 - i & 3 \end{pmatrix} \;\Rightarrow\; \boxed{A^\dagger = \begin{pmatrix} 2 & 1 - i \\ 1 + i & 3 \end{pmatrix}}$
+* $S^T = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix} \;\Rightarrow\; \boxed{S^\dagger = \begin{pmatrix} 1 & 0 \\ 0 & -i \end{pmatrix}}$
+* $B^T = \begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix} \;\Rightarrow\; \boxed{B^\dagger = \begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix}}$
 
-Jadi:
+---
 
-$$
-\boxed{
-S|+\rangle=
-\frac{1}{\sqrt{2}}
-\begin{pmatrix}1\\i\end{pmatrix}
-=|+i\rangle
-}
-$$
+## 2. Tentukan mana yang Hermitian dan mana yang unitary
 
-State yang dihasilkan adalah eigenvector Pauli $Y$ dengan eigenvalue $+1$, sesuai tabel eigenvector Pauli pada Lesson 02.
+Syarat: **Hermitian** jika $M^\dagger = M$; **Unitary** jika $M^\dagger M = M M^\dagger = I$.
 
-## 4 Hitung $HZH$ dan $HXH$, dengan $H$ adalah Hadamard. Apa yang Anda amati?
+### a. Matriks $A$
+* **Hermitian:** $A^\dagger = \begin{pmatrix} 2 & 1 - i \\ 1 + i & 3 \end{pmatrix} = A$ (**Ya, Hermitian**).
+* **Unitary:**
+  $$
+  A^\dagger A = \begin{pmatrix} 2 & 1 - i \\ 1 + i & 3 \end{pmatrix}\begin{pmatrix} 2 & 1 - i \\ 1 + i & 3 \end{pmatrix} = \begin{pmatrix} 4 + 2 & 2(1-i) + 3(1-i) \\ 2(1+i) + 3(1+i) & 2 + 9 \end{pmatrix} = \begin{pmatrix} 6 & 5 - 5i \\ 5 + 5i & 11 \end{pmatrix} \neq I
+  $$
+  (**Bukan Unitary**).
 
-Matriks Hadamard dan Pauli:
+### b. Matriks $S$
+* **Hermitian:** $S^\dagger = \begin{pmatrix} 1 & 0 \\ 0 & -i \end{pmatrix} \neq S$ (**Bukan Hermitian**).
+* **Unitary:**
+  $$
+  S^\dagger S = \begin{pmatrix} 1 & 0 \\ 0 & -i \end{pmatrix}\begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & -i^2 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = I
+  $$
+  Demikian juga $S S^\dagger = I$ (**Ya, Unitary**).
 
-$$
-H=\frac{1}{\sqrt{2}}
-\begin{pmatrix}1&1\\1&-1\end{pmatrix}
-$$
+### c. Matriks $B$
+* **Hermitian:** $B^\dagger = \begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix} \neq B$ (**Bukan Hermitian**).
+* **Unitary:**
+  $$
+  B^\dagger B = \begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix}\begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 1 \\ 1 & 2 \end{pmatrix} \neq I
+  $$
+  (**Bukan Unitary**).
 
-$$
-Z=\begin{pmatrix}1&0\\0&-1\end{pmatrix},
-\qquad
-X=\begin{pmatrix}0&1\\1&0\end{pmatrix}
-$$
+| Matriks | Hermitian | Unitary |
+| :---: | :---: | :---: |
+| $A$ | Ya | Tidak |
+| $S$ | Tidak | Ya |
+| $B$ | Tidak | Tidak |
 
-### a. Menghitung $HZH$
+---
+
+## 3. Hitung $S|+\rangle$. State apa yang dihasilkan?
 
 $$
-\begin{aligned}
-HZH
-&=\frac{1}{\sqrt{2}}
-\begin{pmatrix}1&1\\1&-1\end{pmatrix}
-\begin{pmatrix}1&0\\0&-1\end{pmatrix}
-\frac{1}{\sqrt{2}}
-\begin{pmatrix}1&1\\1&-1\end{pmatrix}\\
-&=\frac{1}{2}
-\begin{pmatrix}1&-1\\1&1\end{pmatrix}
-\begin{pmatrix}1&1\\1&-1\end{pmatrix}\\
-&=\frac{1}{2}
-\begin{pmatrix}
-1-1&1+1\\
-1+1&1-1
-\end{pmatrix}\\
-&=\frac{1}{2}
-\begin{pmatrix}0&2\\2&0\end{pmatrix}
-\end{aligned}
+S|+\rangle = \begin{pmatrix} 1 & 0 \\ 0 & i \end{pmatrix} \cdot \frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ 1 \end{pmatrix} = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ i \end{pmatrix} = \boxed{|+i\rangle}
 $$
 
-$$
-\boxed{HZH=X}
-$$
+State yang dihasilkan adalah **$|+i\rangle$**, yaitu eigenvector dari matriks Pauli $Y$ dengan eigenvalue $+1$.
 
-### b. Menghitung $HXH$
+---
 
-$$
-\begin{aligned}
-HXH
-&=\frac{1}{\sqrt{2}}
-\begin{pmatrix}1&1\\1&-1\end{pmatrix}
-\begin{pmatrix}0&1\\1&0\end{pmatrix}
-\frac{1}{\sqrt{2}}
-\begin{pmatrix}1&1\\1&-1\end{pmatrix}\\
-&=\frac{1}{2}
-\begin{pmatrix}1&1\\-1&1\end{pmatrix}
-\begin{pmatrix}1&1\\1&-1\end{pmatrix}\\
-&=\frac{1}{2}
-\begin{pmatrix}
-1+1&1-1\\
--1+1&-1-1
-\end{pmatrix}\\
-&=\frac{1}{2}
-\begin{pmatrix}2&0\\0&-2\end{pmatrix}\\
-&=\boxed{\begin{pmatrix}1&0\\0&-1\end{pmatrix}=Z}
-\end{aligned}
-$$
+## 4. Hitung $HZH$ dan $HXH$. Apa yang Anda amati?
 
-## 5 Hitung commutator $[X, Y]$ dan nyatakan hasilnya dalam bentuk kelipatan salah satu Pauli matrix.
+* **Menghitung $HZH$:**
+  $$
+  \begin{aligned}
+  HZH &= \frac{1}{\sqrt{2}}\begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}\frac{1}{\sqrt{2}}\begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \\
+  &= \frac{1}{2}\begin{pmatrix} 1 & -1 \\ 1 & 1 \end{pmatrix}\begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \\
+  &= \frac{1}{2}\begin{pmatrix} 0 & 2 \\ 2 & 0 \end{pmatrix} = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} = \boxed{X}
+  \end{aligned}
+  $$
 
-Definisi commutator:
+* **Menghitung $HXH$:**
+  $$
+  \begin{aligned}
+  HXH &= \frac{1}{\sqrt{2}}\begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}\frac{1}{\sqrt{2}}\begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \\
+  &= \frac{1}{2}\begin{pmatrix} 1 & 1 \\ -1 & 1 \end{pmatrix}\begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \\
+  &= \frac{1}{2}\begin{pmatrix} 2 & 0 \\ 0 & -2 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} = \boxed{Z}
+  \end{aligned}
+  $$
 
-$$
-[X,Y]=XY-YX
-$$
+**Pengamatan:** Konjugasi oleh gerbang Hadamard ($H$) menukar basis komputasi ($Z$) dengan basis Hadamard ($X$), yakni mengubah bit-flip ($X$) menjadi phase-flip ($Z$) dan sebaliknya.
 
-Matriks Pauli:
+---
 
-$$
-X=\begin{pmatrix}0&1\\1&0\end{pmatrix},
-\qquad
-Y=\begin{pmatrix}0&-i\\i&0\end{pmatrix}
-$$
+## 5. Hitung commutator $[X, Y]$
 
-Hitung $XY$:
+Gunakan $[X, Y] = XY - YX$:
 
 $$
 \begin{aligned}
-XY
-&=
-\begin{pmatrix}0&1\\1&0\end{pmatrix}
-\begin{pmatrix}0&-i\\i&0\end{pmatrix}\\
-&=\begin{pmatrix}i&0\\0&-i\end{pmatrix}\\
-&=iZ
+XY &= \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} = \begin{pmatrix} i & 0 \\ 0 & -i \end{pmatrix} = iZ \\
+YX &= \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} = \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix} = -iZ
 \end{aligned}
 $$
 
-Hitung $YX$:
+Sehingga:
 
 $$
-\begin{aligned}
-YX
-&=
-\begin{pmatrix}0&-i\\i&0\end{pmatrix}
-\begin{pmatrix}0&1\\1&0\end{pmatrix}\\
-&=\begin{pmatrix}-i&0\\0&i\end{pmatrix}\\
-&=-iZ
-\end{aligned}
+[X, Y] = iZ - (-iZ) = \boxed{2iZ}
 $$
 
-Maka:
+---
+
+## 6. Tunjukkan bahwa $X^2 = Y^2 = Z^2 = I$
+
+* $X^2 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = I$
+* $Y^2 = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}\begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} = \begin{pmatrix} -i^2 & 0 \\ 0 & -i^2 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = I$
+* $Z^2 = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = I$
+
+Terbukti bahwa $\boxed{X^2 = Y^2 = Z^2 = I}$.
+
+---
+
+## 7. Mengapa $B$ tidak bisa menjadi quantum gate?
+
+Quantum gate wajib berupa operator **unitary** ($U^\dagger U = I$) agar norm vektor state tetap terjaga ($\|U|\psi\rangle\| = \|\psi\| = 1$) sehingga total probabilitas pengukuran tetap bernilai $1$. Matriks $B$ **tidak unitary** ($B^\dagger B \neq I$).
+
+**Contoh penyangkal:** Ambil state ternormalisasi $|\psi\rangle = |+\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ 1 \end{pmatrix}$ dengan $\|\psi\| = 1$. Setelah dikenai $B$:
 
 $$
-\begin{aligned}
-[X,Y]
-&=XY-YX\\
-&=iZ-(-iZ)\\
-&=2iZ
-\end{aligned}
+B|+\rangle = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix} \cdot \frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ 1 \end{pmatrix} = \frac{1}{\sqrt{2}}\begin{pmatrix} 2 \\ 1 \end{pmatrix}
 $$
 
-$$
-\boxed{[X,Y]=2iZ}
-$$
-
-## 6 Tunjukkan bahwa $X^2 = Y^2 = Z^2 = I$.
-
-### a. Membuktikan $X^2=I$
+Norm barunya menjadi:
 
 $$
-\begin{aligned}
-X^2
-&=\begin{pmatrix}0&1\\1&0\end{pmatrix}
-\begin{pmatrix}0&1\\1&0\end{pmatrix}\\
-&=\begin{pmatrix}1&0\\0&1\end{pmatrix}\\
-&=\boxed{I}
-\end{aligned}
+\|B|+\rangle\| = \sqrt{\left(\frac{2}{\sqrt{2}}\right)^2 + \left(\frac{1}{\sqrt{2}}\right)^2} = \sqrt{\frac{4}{2} + \frac{1}{2}} = \sqrt{\frac{5}{2}} \neq 1
 $$
 
-### b. Membuktikan $Y^2=I$
-
-$$
-\begin{aligned}
-Y^2
-&=\begin{pmatrix}0&-i\\i&0\end{pmatrix}
-\begin{pmatrix}0&-i\\i&0\end{pmatrix}\\
-&=\begin{pmatrix}
-(-i)(i)&0\\
-0&i(-i)
-\end{pmatrix}\\
-&=\begin{pmatrix}1&0\\0&1\end{pmatrix}\\
-&=\boxed{I}
-\end{aligned}
-$$
-
-### c. Membuktikan $Z^2=I$
-
-$$
-\begin{aligned}
-Z^2
-&=\begin{pmatrix}1&0\\0&-1\end{pmatrix}
-\begin{pmatrix}1&0\\0&-1\end{pmatrix}\\
-&=\begin{pmatrix}1&0\\0&1\end{pmatrix}\\
-&=\boxed{I}
-\end{aligned}
-$$
-
-Jadi:
-
-$$
-\boxed{X^2=Y^2=Z^2=I}
-$$
-
-## 7 Mengapa $B$ **tidak bisa** menjadi quantum gate? Tunjukkan dengan contoh state ternormalisasi yang norm-nya berubah setelah dikenai $B$.
-
-Menurut Lesson 02, quantum gate harus berupa matriks unitary:
-
-$$
-U^\dagger U=I
-$$
-
-Sifat unitary menjaga norm state sehingga probabilitas total tetap 1.
-
-Dari nomor 3.2 telah diperoleh:
-
-$$
-B^\dagger B=
-\begin{pmatrix}1&1\\1&2\end{pmatrix}
-\neq I
-$$
-
-Untuk memperlihatkan perubahan norm, gunakan contoh state ternormalisasi:
-
-$$
-|\psi\rangle=|+\rangle=
-\frac{1}{\sqrt{2}}
-\begin{pmatrix}1\\1\end{pmatrix}
-$$
-
-Norm awal:
-
-$$
-\begin{aligned}
-\|\psi\|
-&=\sqrt{\frac{1}{2}+\frac{1}{2}}\\
-&=1
-\end{aligned}
-$$
-
-Terapkan matriks $B$:
-
-$$
-\begin{aligned}
-B|\psi\rangle
-&=
-\begin{pmatrix}1&1\\0&1\end{pmatrix}
-\frac{1}{\sqrt{2}}
-\begin{pmatrix}1\\1\end{pmatrix}\\
-&=\frac{1}{\sqrt{2}}
-\begin{pmatrix}2\\1\end{pmatrix}
-\end{aligned}
-$$
-
-Hitung norm hasil:
-
-$$
-\begin{aligned}
-\|B|\psi\rangle\|
-&=\sqrt{\left|\frac{2}{\sqrt{2}}\right|^2+
-\left|\frac{1}{\sqrt{2}}\right|^2}\\
-&=\sqrt{\frac{4}{2}+\frac{1}{2}}\\
-&=\sqrt{\frac{5}{2}}\\
-&\approx1{,}581
-\end{aligned}
-$$
-
-Karena:
-
-$$
-\sqrt{\frac{5}{2}}\neq1
-$$
-
-maka norm state berubah setelah dikenai matriks $B$.
-
-$$
-\boxed{B\text{ bukan quantum gate karena tidak unitary}}
-$$
+Karena melanggar kekekalan probabilitas, $B$ tidak dapat menjadi quantum gate.
 
 ---
 
 # Task 4 — Eigenvalue & Eigenvector
 
-Rumus dasar eigenvalue dan eigenvector:
+## 1. Hitung eigenvalue dan eigenvector ternormalisasi dari Pauli $Y$
+
+### a. Mencari Eigenvalue
+Selesaikan persamaan karakteristik $\det(Y - \lambda I) = 0$:
 
 $$
-A|v\rangle=\lambda|v\rangle
+\det\begin{pmatrix} -\lambda & -i \\ i & -\lambda \end{pmatrix} = (-\lambda)(-\lambda) - (-i)(i) = \lambda^2 - 1 = 0 \;\Rightarrow\; \boxed{\lambda_1 = +1, \quad \lambda_2 = -1}
 $$
 
-Untuk mencari eigenvalue:
+### b. Mencari Eigenvector & Normalisasi
 
-$$
-\boxed{\det(A-\lambda I)=0}
-$$
+* **Untuk $\lambda_1 = +1$:**
+  Selesaikan $(Y - I)|v\rangle = 0$:
+  $$
+  \begin{pmatrix} -1 & -i \\ i & -1 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \;\Rightarrow\; -x - iy = 0 \;\Rightarrow\; y = ix
+  $$
+  Pilih $x = 1 \Rightarrow y = i$, didapat $|v\rangle = \begin{pmatrix} 1 \\ i \end{pmatrix}$ dengan norm $\|v\| = \sqrt{1^2 + |i|^2} = \sqrt{2}$. Setelah dinormalisasi:
+  $$
+  \boxed{|+i\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ i \end{pmatrix}}
+  $$
 
-Untuk mencari eigenvector:
+* **Untuk $\lambda_2 = -1$:**
+  Selesaikan $(Y + I)|v\rangle = 0$:
+  $$
+  \begin{pmatrix} 1 & -i \\ i & 1 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \;\Rightarrow\; x - iy = 0 \;\Rightarrow\; y = -ix
+  $$
+  Pilih $x = 1 \Rightarrow y = -i$, didapat $|v\rangle = \begin{pmatrix} 1 \\ -i \end{pmatrix}$ dengan norm $\sqrt{2}$. Setelah dinormalisasi:
+  $$
+  \boxed{|-i\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ -i \end{pmatrix}}
+  $$
 
-$$
-\boxed{(A-\lambda I)|v\rangle=0}
-$$
+---
 
-## 1 Hitung eigenvalue dan eigenvector ternormalisasi dari **Pauli Y** secara manual.
+## 2. Hitung eigenvalue dan eigenvector ternormalisasi dari matriks $A$
 
-Dik:
-
-$$
-Y=\begin{pmatrix}0&-i\\i&0\end{pmatrix}
-$$
-
-### a. Mencari eigenvalue
-
-$$
-\det(Y-\lambda I)=0
-$$
-
-$$
-\begin{aligned}
-\det
-\begin{pmatrix}
--\lambda&-i\\
-i&-\lambda
-\end{pmatrix}
-&=0\\
-(-\lambda)(-\lambda)-(-i)(i)&=0\\
-\lambda^2-1&=0
-\end{aligned}
-$$
-
-Faktorkan:
-
-$$
-(\lambda-1)(\lambda+1)=0
-$$
-
-Maka:
-
-$$
-\boxed{\lambda_1=+1,\qquad\lambda_2=-1}
-$$
-
-### b. Mencari eigenvector untuk $\lambda=+1$
-
-Gunakan:
-
-$$
-(Y-I)|v\rangle=0
-$$
-
-$$
-\begin{pmatrix}
--1&-i\\
-i&-1
-\end{pmatrix}
-\begin{pmatrix}x\\y\end{pmatrix}
-=
-\begin{pmatrix}0\\0\end{pmatrix}
-$$
-
-Persamaan baris pertama:
-
-$$
--x-iy=0
-$$
-
-$$
-x=-iy
-$$
-
-Ambil $y=i$, sehingga $x=1$.
-
-Vektor:
-
-$$
-|v\_+\rangle=\begin{pmatrix}1\\i\end{pmatrix}
-$$
-
-Norm:
-
-$$
-\|v\_+\|=\sqrt{|1|^2+|i|^2}=\sqrt{2}
-$$
-
-Normalisasi:
-
-$$
-\boxed{
-|v\_+\rangle=
-\frac{1}{\sqrt{2}}
-\begin{pmatrix}1\\i\end{pmatrix}
-=|+i\rangle
-}
-$$
-
-### c. Mencari eigenvector untuk $\lambda=-1$
-
-Gunakan:
-
-$$
-(Y+I)|v\rangle=0
-$$
-
-$$
-\begin{pmatrix}
-1&-i\\
-i&1
-\end{pmatrix}
-\begin{pmatrix}x\\y\end{pmatrix}
-=
-\begin{pmatrix}0\\0\end{pmatrix}
-$$
-
-Persamaan baris pertama:
-
-$$
-x-iy=0
-$$
-
-$$
-x=iy
-$$
-
-Ambil $y=-i$, sehingga $x=1$.
-
-Vektor:
-
-$$
-|v\_-\rangle=\begin{pmatrix}1\\-i\end{pmatrix}
-$$
-
-Norm:
-
-$$
-\|v\_-\|=\sqrt{|1|^2+|-i|^2}=\sqrt{2}
-$$
-
-Normalisasi:
-
-$$
-\boxed{
-|v\_-\rangle=
-\frac{1}{\sqrt{2}}
-\begin{pmatrix}1\\-i\end{pmatrix}
-=|-i\rangle
-}
-$$
-
-**Hasil akhir:**
-
-| Eigenvalue | Eigenvector ternormalisasi                              |
-| ---------- | ------------------------------------------------------- |
-| $+1$     | $\frac{1}{\sqrt{2}}\begin{pmatrix}1\\i\end{pmatrix}$  |
-| $-1$     | $\frac{1}{\sqrt{2}}\begin{pmatrix}1\\-i\end{pmatrix}$ |
-
-## 2 Hitung eigenvalue dan eigenvector ternormalisasi dari matriks $A$ pada Task 3. Apakah eigenvalue-nya real? Mengapa hal ini sudah dapat diprediksi?
-
-Dari Task 3:
-
-$$
-A=\begin{pmatrix}
-2&1-i\\
-1+i&3
-\end{pmatrix}
-$$
-
-### a. Mencari eigenvalue
-
-Gunakan persamaan karakteristik:
-
-$$
-\det(A-\lambda I)=0
-$$
+### a. Mencari Eigenvalue
+Selesaikan $\det(A - \lambda I) = 0$:
 
 $$
 \begin{aligned}
-\det
-\begin{pmatrix}
-2-\lambda&1-i\\
-1+i&3-\lambda
-\end{pmatrix}
-&=0\\
-(2-\lambda)(3-\lambda)-(1-i)(1+i)&=0
+\det\begin{pmatrix} 2 - \lambda & 1 - i \\ 1 + i & 3 - \lambda \end{pmatrix} &= (2 - \lambda)(3 - \lambda) - (1 - i)(1 + i) = 0 \\
+(6 - 5\lambda + \lambda^2) - (1 - i^2) &= 0 \\
+\lambda^2 - 5\lambda + 4 &= 0 \\
+(\lambda - 1)(\lambda - 4) &= 0 \;\Rightarrow\; \boxed{\lambda_1 = 1, \quad \lambda_2 = 4}
 \end{aligned}
 $$
 
-Karena:
+### b. Mencari Eigenvector & Normalisasi
 
-$$
-(1-i)(1+i)=1-i^2=2
-$$
+* **Untuk $\lambda_1 = 1$:**
+  Selesaikan $(A - I)|v_1\rangle = 0$:
+  $$
+  \begin{pmatrix} 1 & 1 - i \\ 1 + i & 2 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \;\Rightarrow\; x + (1 - i)y = 0 \;\Rightarrow\; x = (-1 + i)y
+  $$
+  Pilih $y = 1 \Rightarrow x = -1 + i$. Norm vektor: $\|v_1\| = \sqrt{|-1 + i|^2 + 1^2} = \sqrt{(1 + 1) + 1} = \sqrt{3}$.
+  $$
+  \boxed{|v_1\rangle = \frac{1}{\sqrt{3}}\begin{pmatrix} -1 + i \\ 1 \end{pmatrix}}
+  $$
 
-Maka:
+* **Untuk $\lambda_2 = 4$:**
+  Selesaikan $(A - 4I)|v_2\rangle = 0$:
+  $$
+  \begin{pmatrix} -2 & 1 - i \\ 1 + i & -1 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \;\Rightarrow\; (1 + i)x - y = 0 \;\Rightarrow\; y = (1 + i)x
+  $$
+  Pilih $x = 1 \Rightarrow y = 1 + i$. Norm vektor: $\|v_2\| = \sqrt{1^2 + |1 + i|^2} = \sqrt{1 + (1 + 1)} = \sqrt{3}$.
+  $$
+  \boxed{|v_2\rangle = \frac{1}{\sqrt{3}}\begin{pmatrix} 1 \\ 1 + i \end{pmatrix}}
+  $$
+  *(Catatan: bentuk ini ekuivalen hingga global phase dengan $\frac{1}{\sqrt{6}}\begin{pmatrix} 1 - i \\ 2 \end{pmatrix}$).*
+
+### c. Analisis Nilai Eigenvalue
+**Ya, kedua eigenvalue bernilai real** ($\lambda_1 = 1$ dan $\lambda_2 = 4$). Hal ini sudah dapat diprediksi sejak awal karena $A$ merupakan matriks **Hermitian** ($A^\dagger = A$), dan menurut sifat operator kuantum, semua matriks Hermitian pasti memiliki eigenvalue real.
+
+---
+
+## 3. Verifikasi bahwa kedua eigenvector dari $A$ saling ortogonal
+
+Hitung inner product $\langle v_1|v_2\rangle$ dengan $\langle v_1| = \frac{1}{\sqrt{3}}\begin{pmatrix} -1 - i & 1 \end{pmatrix}$:
 
 $$
 \begin{aligned}
-(2-\lambda)(3-\lambda)-2&=0\\
-6-5\lambda+\lambda^2-2&=0\\
-\lambda^2-5\lambda+4&=0
+\langle v_1|v_2\rangle &= \frac{1}{\sqrt{3}}\begin{pmatrix} -1 - i & 1 \end{pmatrix} \cdot \frac{1}{\sqrt{3}}\begin{pmatrix} 1 \\ 1 + i \end{pmatrix} \\
+&= \frac{1}{3}\Big[(-1 - i)(1) + (1)(1 + i)\Big] \\
+&= \frac{1}{3}(-1 - i + 1 + i) = \boxed{0}
 \end{aligned}
 $$
 
-Faktorkan:
+Karena $\langle v_1|v_2\rangle = 0$, **terbukti kedua eigenvector saling ortogonal**.
 
-$$
-(\lambda-1)(\lambda-4)=0
-$$
+---
 
-Jadi:
+## 4. Hitung eigenvalue dari Hadamard $H$
 
-$$
-\boxed{\lambda_1=1,\qquad\lambda_2=4}
-$$
-
-### b. Mencari eigenvector untuk $\lambda=1$
-
-Gunakan:
-
-$$
-(A-I)|v_1\rangle=0
-$$
-
-$$
-\begin{pmatrix}
-1&1-i\\
-1+i&2
-\end{pmatrix}
-\begin{pmatrix}x\\y\end{pmatrix}
-=
-\begin{pmatrix}0\\0\end{pmatrix}
-$$
-
-Persamaan baris pertama:
-
-$$
-x+(1-i)y=0
-$$
-
-$$
-x=-(1-i)y=(-1+i)y
-$$
-
-Ambil $y=1$, maka $x=-1+i$.
-
-Vektor:
-
-$$
-|v_1\rangle=
-\begin{pmatrix}-1+i\\1\end{pmatrix}
-$$
-
-Hitung norm:
+Selesaikan $\det(H - \lambda I) = 0$:
 
 $$
 \begin{aligned}
-\|v_1\|
-&=\sqrt{|-1+i|^2+|1|^2}\\
-&=\sqrt{((-1)^2+1^2)+1}\\
-&=\sqrt{3}
+\det\begin{pmatrix} \frac{1}{\sqrt{2}} - \lambda & \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}} - \lambda \end{pmatrix} &= \left(\frac{1}{\sqrt{2}} - \lambda\right)\left(-\frac{1}{\sqrt{2}} - \lambda\right) - \left(\frac{1}{\sqrt{2}}\right)^2 = 0 \\
+\left(\lambda^2 - \frac{1}{2}\right) - \frac{1}{2} &= 0 \\
+\lambda^2 - 1 &= 0 \;\Rightarrow\; \boxed{\lambda_1 = +1, \quad \lambda_2 = -1}
 \end{aligned}
 $$
 
-Normalisasi:
+---
 
-$$
-\boxed{
-|v_1\rangle=
-\frac{1}{\sqrt{3}}
-\begin{pmatrix}-1+i\\1\end{pmatrix}
-}
-$$
+## 5. Tuliskan Pauli $Z$ dalam bentuk outer product (*spectral decomposition*)
 
-### c. Mencari eigenvector untuk $\lambda=4$
+Matriks $Z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$ memiliki pasangan eigenvalue dan eigenvector:
+* $\lambda_1 = +1 \;\leftrightarrow\; |v_1\rangle = |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$
+* $\lambda_2 = -1 \;\leftrightarrow\; |v_2\rangle = |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}$
 
-Gunakan:
-
-$$
-(A-4I)|v_2\rangle=0
-$$
-
-$$
-\begin{pmatrix}
--2&1-i\\
-1+i&-1
-\end{pmatrix}
-\begin{pmatrix}x\\y\end{pmatrix}
-=
-\begin{pmatrix}0\\0\end{pmatrix}
-$$
-
-Persamaan baris pertama:
-
-$$
--2x+(1-i)y=0
-$$
-
-$$
-2x=(1-i)y
-$$
-
-$$
-x=\frac{1-i}{2}y
-$$
-
-Ambil $y=2$, maka $x=1-i$.
-
-Vektor:
-
-$$
-|v_2\rangle=
-\begin{pmatrix}1-i\\2\end{pmatrix}
-$$
-
-Hitung norm:
+Substitusikan ke dalam rumus *spectral decomposition* $Z = \sum_k \lambda_k |v_k\rangle\langle v_k|$:
 
 $$
 \begin{aligned}
-\|v_2\|
-&=\sqrt{|1-i|^2+|2|^2}\\
-&=\sqrt{(1^2+(-1)^2)+4}\\
-&=\sqrt{6}
+Z &= (+1)|0\rangle\langle 0| + (-1)|1\rangle\langle 1| \\
+&= \boxed{|0\rangle\langle 0| - |1\rangle\langle 1|}
 \end{aligned}
 $$
 
-Normalisasi:
+**Verifikasi matriks:**
 
 $$
-\boxed{
-|v_2\rangle=
-\frac{1}{\sqrt{6}}
-\begin{pmatrix}1-i\\2\end{pmatrix}
-}
-$$
-
-### d. Apakah eigenvalue real? Mengapa?
-
-Hasil eigenvalue:
-
-$$
-\lambda_1=1,\qquad\lambda_2=4
-$$
-
-Keduanya merupakan bilangan real.
-
-Hal ini dapat diprediksi karena matriks $A$ adalah Hermitian:
-
-$$
-A^\dagger=A
-$$
-
-Berdasarkan Lesson 02, eigenvalue dari matriks Hermitian selalu real.
-
-$$
-\boxed{\text{Kedua eigenvalue real karena }A\text{ Hermitian}}
-$$
-
-## 3 Verifikasi bahwa kedua eigenvector dari $A$ saling ortogonal.
-
-Dari nomor 2:
-
-$$
-|v_1\rangle=
-\frac{1}{\sqrt{3}}
-\begin{pmatrix}-1+i\\1\end{pmatrix}
-$$
-
-$$
-|v_2\rangle=
-\frac{1}{\sqrt{6}}
-\begin{pmatrix}1-i\\2\end{pmatrix}
-$$
-
-Bra dari eigenvector pertama:
-
-$$
-\langle v_1|=
-\frac{1}{\sqrt{3}}
-\begin{pmatrix}-1-i&1\end{pmatrix}
-$$
-
-Hitung inner product:
-
-$$
-\begin{aligned}
-\langle v_1|v_2\rangle
-&=\frac{1}{\sqrt{3}}\begin{pmatrix}-1-i&1\end{pmatrix}
-\frac{1}{\sqrt{6}}
-\begin{pmatrix}1-i\\2\end{pmatrix}\\
-&=\frac{1}{\sqrt{18}}
-\left[(-1-i)(1-i)+(1)(2)\right]
-\end{aligned}
-$$
-
-Hitung:
-
-$$
-\begin{aligned}
-(-1-i)(1-i)
-&=-1+i-i+i^2\\
-&=-1-1\\
-&=-2
-\end{aligned}
-$$
-
-Maka:
-
-$$
-\begin{aligned}
-\langle v_1|v_2\rangle
-&=\frac{1}{\sqrt{18}}(-2+2)\\
-&=\boxed{0}
-\end{aligned}
-$$
-
-## 4 Hitung eigenvalue dari Hadamard $H$.
-
-Dik:
-
-$$
-H=\frac{1}{\sqrt{2}}
-\begin{pmatrix}
-1&1\\
-1&-1
-\end{pmatrix}
-$$
-
-Cari eigenvalue dengan:
-
-$$
-\det(H-\lambda I)=0
-$$
-
-$$
-\begin{aligned}
-\det
-\begin{pmatrix}
-\frac{1}{\sqrt{2}}-\lambda&\frac{1}{\sqrt{2}}\\
-\frac{1}{\sqrt{2}}&-\frac{1}{\sqrt{2}}-\lambda
-\end{pmatrix}
-&=0
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-\left(\frac{1}{\sqrt{2}}-\lambda\right)
-\left(-\frac{1}{\sqrt{2}}-\lambda\right)
--\frac{1}{2}&=0\\
-\left(\lambda^2-\frac{1}{2}\right)-\frac{1}{2}&=0\\
-\lambda^2-1&=0
-\end{aligned}
-$$
-
-Faktorkan:
-
-$$
-(\lambda-1)(\lambda+1)=0
-$$
-
-Maka:
-
-$$
-\boxed{\lambda_1=+1,\qquad\lambda_2=-1}
-$$
-
-## 5 Tuliskan Pauli Z dalam bentuk **outer product**: $Z = \sum_k \lambda_k |v_k\rangle\langle v_k|$ (_spectral decomposition_).
-
-Dik:
-
-$$
-Z=\begin{pmatrix}1&0\\0&-1\end{pmatrix}
-$$
-
-Eigenvalue dan eigenvector Pauli $Z$:
-
-$$
-\lambda_1=+1,\quad |v_1\rangle=|0\rangle=
-\begin{pmatrix}1\\0\end{pmatrix}
-$$
-
-$$
-\lambda_2=-1,\quad |v_2\rangle=|1\rangle=
-\begin{pmatrix}0\\1\end{pmatrix}
-$$
-
-Rumus spectral decomposition:
-
-$$
-Z=\sum_k\lambda_k|v_k\rangle\langle v_k|
-$$
-
-Substitusi:
-
-$$
-Z=(+1)|0\rangle\langle0|+(-1)|1\rangle\langle1|
-$$
-
-Hitung outer product pertama:
-
-$$
-|0\rangle\langle0|=
-\begin{pmatrix}1\\0\end{pmatrix}
-\begin{pmatrix}1&0\end{pmatrix}
-=
-\begin{pmatrix}1&0\\0&0\end{pmatrix}
-$$
-
-Hitung outer product kedua:
-
-$$
-|1\rangle\langle1|=
-\begin{pmatrix}0\\1\end{pmatrix}
-\begin{pmatrix}0&1\end{pmatrix}
-=
-\begin{pmatrix}0&0\\0&1\end{pmatrix}
-$$
-
-Maka:
-
-$$
-\begin{aligned}
-Z
-&=\begin{pmatrix}1&0\\0&0\end{pmatrix}
--\begin{pmatrix}0&0\\0&1\end{pmatrix}\\
-&=\begin{pmatrix}1&0\\0&-1\end{pmatrix}
-\end{aligned}
-$$
-
-$$
-\boxed{Z=|0\rangle\langle0|-|1\rangle\langle1|}
+|0\rangle\langle 0| - |1\rangle\langle 1| = \begin{pmatrix} 1 \\ 0 \end{pmatrix}\begin{pmatrix} 1 & 0 \end{pmatrix} - \begin{pmatrix} 0 \\ 1 \end{pmatrix}\begin{pmatrix} 0 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix} - \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} = Z
 $$
