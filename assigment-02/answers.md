@@ -7,21 +7,19 @@ $$
 
 ### 1.1 Operasi bilangan kompleks
 
-a. Penjumlahan
+**a. Penjumlahan**
 $$
 \begin{aligned}
-z_1+z_2
-&=(1+i)+(\sqrt3-i)\\
+z_1+z_2 &=(1+i)+(\sqrt3-i)\\
 &=1+\sqrt3+i-i\\
 &=\boxed{1+\sqrt3}
 \end{aligned}
 $$
 
-b. Perkalian
+**b. Perkalian**
 $$
 \begin{aligned}
-z_1z_2
-&=(1+i)(\sqrt3-i)\\
+z_1z_2 &=(1+i)(\sqrt3-i)\\
 &=\sqrt3-i+i\sqrt3-i^2\\
 &=\sqrt3+1+i(\sqrt3-1)
 \end{aligned}
@@ -30,7 +28,7 @@ $$
 \boxed{z_1z_2=(\sqrt3+1)+(\sqrt3-1)i}
 $$
 
-c. Konjugat
+**c. Konjugat**
 $$
 z_1=1+i
 $$
@@ -38,21 +36,17 @@ $$
 \boxed{z_1^*=1-i}
 $$
 
-d. Pembagian
+**d. Pembagian**
 $$
 \begin{aligned}
-\frac{z_1}{z_2}
-&=\frac{1+i}{\sqrt3-i}
-\times\frac{\sqrt3+i}{\sqrt3+i}\\
+\frac{z_1}{z_2} &=\frac{1+i}{\sqrt3-i} \times\frac{\sqrt3+i}{\sqrt3+i}\\
 &=\frac{(1+i)(\sqrt3+i)}{(\sqrt3)^2-i^2}\\
 &=\frac{\sqrt3-1+(1+\sqrt3)i}{3+1}
 \end{aligned}
 $$
 $$
 \boxed{
-\frac{z_1}{z_2}
-=\frac{\sqrt3-1}{4}
-+\frac{1+\sqrt3}{4}i
+\frac{z_1}{z_2} =\frac{\sqrt3-1}{4} +\frac{1+\sqrt3}{4}i
 }
 $$
 
@@ -63,30 +57,27 @@ $$
 |z|=\sqrt{a^2+b^2}
 $$
 
-a. Modulus $z_1$
+**a. Modulus $z_1$**
 $$
 \begin{aligned}
-|z_1|
-&=\sqrt{1^2+1^2}\\
+|z_1| &=\sqrt{1^2+1^2}\\
 &=\boxed{\sqrt2}
 \end{aligned}
 $$
 
-b. Modulus $z_2$
+**b. Modulus $z_2$**
 $$
 \begin{aligned}
-|z_2|
-&=\sqrt{(\sqrt3)^2+(-1)^2}\\
+|z_2| &=\sqrt{(\sqrt3)^2+(-1)^2}\\
 &=\sqrt{3+1}\\
 &=\boxed{2}
 \end{aligned}
 $$
 
-c. Modulus $z_1z_2$
+**c. Modulus $z_1z_2$**
 $$
 \begin{aligned}
-|z_1z_2|
-&=\sqrt{(\sqrt3+1)^2+(\sqrt3-1)^2}\\
+|z_1z_2| &=\sqrt{(\sqrt3+1)^2+(\sqrt3-1)^2}\\
 &=\sqrt{(4+2\sqrt3)+(4-2\sqrt3)}\\
 &=\sqrt8\\
 &=\boxed{2\sqrt2}
@@ -96,8 +87,7 @@ $$
 Verifikasi:
 $$
 \begin{aligned}
-|z_1||z_2|
-&=\sqrt2(2)\\
+|z_1||z_2| &=\sqrt2(2)\\
 &=2\sqrt2
 \end{aligned}
 $$
@@ -112,25 +102,23 @@ $$
 z=re^{i\theta}
 $$
 
-a. $z_1=1+i$
+**a. $z_1=1+i$**
 $$
 r_1=\sqrt{1^2+1^2}=\sqrt2
 $$
 $$
-\theta_1=\tan^{-1}\left(\frac11\right)
-=\frac{\pi}{4}
+\theta_1=\tan^{-1}\left(\frac11\right) =\frac{\pi}{4}
 $$
 $$
 \boxed{z_1=\sqrt2e^{i\pi/4}}
 $$
 
-b. $z_2=\sqrt3-i$
+**b. $z_2=\sqrt3-i$**
 $$
 r_2=\sqrt{3+1}=2
 $$
 $$
-\theta_2=\tan^{-1}\left(\frac{-1}{\sqrt3}\right)
-=-\frac{\pi}{6}
+\theta_2=\tan^{-1}\left(\frac{-1}{\sqrt3}\right) =-\frac{\pi}{6}
 $$
 $$
 \boxed{z_2=2e^{-i\pi/6}}
@@ -144,8 +132,7 @@ $$
 $$
 $$
 \begin{aligned}
-z_1^8
-&=(\sqrt2e^{i\pi/4})^8\\
+z_1^8 &=(\sqrt2e^{i\pi/4})^8\\
 &=(\sqrt2)^8e^{i2\pi}\\
 &=16(\cos2\pi+i\sin2\pi)\\
 &=16(1+0i)
@@ -163,8 +150,7 @@ e^{i\theta}=\cos\theta+i\sin\theta
 $$
 $$
 \begin{aligned}
-|e^{i\theta}|^2
-&=|\cos\theta+i\sin\theta|^2\\
+|e^{i\theta}|^2 &=|\cos\theta+i\sin\theta|^2\\
 &=\cos^2\theta+\sin^2\theta\\
 &=1
 \end{aligned}
@@ -179,16 +165,10 @@ $$
 
 Diketahui:
 $$
-|a\rangle=
-\begin{pmatrix}1\\2i\end{pmatrix},
-\quad
-|b\rangle=
-\begin{pmatrix}2\\-i\end{pmatrix}
+|a\rangle= \begin{pmatrix}1\\2i\end{pmatrix}, \quad |b\rangle= \begin{pmatrix}2\\-i\end{pmatrix}
 $$
 $$
-|c\rangle=
-\frac12|0\rangle+
-\frac{\sqrt3}{2}e^{i\pi/4}|1\rangle
+|c\rangle= \frac12|0\rangle+ \frac{\sqrt3}{2}e^{i\pi/4}|1\rangle
 $$
 
 ### 2.1 Mencari bra $\langle a|$ dan $\langle b|$
@@ -198,20 +178,18 @@ $$
 \langle\psi|=(|\psi\rangle^\dagger)
 $$
 
-a. 
+**a.**
 $$
-|a\rangle=
-\begin{pmatrix}1\\2i\end{pmatrix}
+|a\rangle= \begin{pmatrix}1\\2i\end{pmatrix}
 $$
 Transpose dan konjugasi:
 $$
 \boxed{\langle a|=\begin{pmatrix}1&-2i\end{pmatrix}}
 $$
 
-b. 
+**b.**
 $$
-|b\rangle=
-\begin{pmatrix}2\\-i\end{pmatrix}
+|b\rangle= \begin{pmatrix}2\\-i\end{pmatrix}
 $$
 $$
 \boxed{\langle b|=\begin{pmatrix}2&i\end{pmatrix}}
@@ -219,24 +197,20 @@ $$
 
 ### 2.2 Menghitung inner product
 
-a. $\langle a|b\rangle$
+**a. $\langle a|b\rangle$**
 $$
 \begin{aligned}
-\langle a|b\rangle
-&=\begin{pmatrix}1&-2i\end{pmatrix}
-\begin{pmatrix}2\\-i\end{pmatrix}\\
+\langle a|b\rangle &=\begin{pmatrix}1&-2i\end{pmatrix} \begin{pmatrix}2\\-i\end{pmatrix}\\
 &=2+2i^2\\
 &=2-2\\
 &=\boxed{0}
 \end{aligned}
 $$
 
-b. $\langle b|a\rangle$
+**b. $\langle b|a\rangle$**
 $$
 \begin{aligned}
-\langle b|a\rangle
-&=\begin{pmatrix}2&i\end{pmatrix}
-\begin{pmatrix}1\\2i\end{pmatrix}\\
+\langle b|a\rangle &=\begin{pmatrix}2&i\end{pmatrix} \begin{pmatrix}1\\2i\end{pmatrix}\\
 &=2+2i^2\\
 &=2-2\\
 &=\boxed{0}
@@ -245,8 +219,7 @@ $$
 
 Verifikasi:
 $$
-\langle a|b\rangle
-=\langle b|a\rangle^*
+\langle a|b\rangle =\langle b|a\rangle^*
 $$
 $$
 \boxed{0=0^*}
@@ -270,15 +243,13 @@ $$
 \|\psi\|=\sqrt{\langle\psi|\psi\rangle}
 $$
 $$
-|\psi_{\text{norm}}\rangle
-=\frac{|\psi\rangle}{\|\psi\|}
+|\psi_{\text{norm}}\rangle =\frac{|\psi\rangle}{\|\psi\|}
 $$
 
-a. Normalisasi $|a\rangle$
+**a. Normalisasi $|a\rangle$**
 $$
 \begin{aligned}
-\|a\|
-&=\sqrt{(1)(1)+(-2i)(2i)}\\
+\|a\| &=\sqrt{(1)(1)+(-2i)(2i)}\\
 &=\sqrt{1-4i^2}\\
 &=\sqrt5
 \end{aligned}
@@ -286,9 +257,7 @@ $$
 Maka:
 $$
 \boxed{
-|a_{\text{norm}}\rangle
-=\frac1{\sqrt5}
-\begin{pmatrix}1\\2i\end{pmatrix}
+|a_{\text{norm}}\rangle =\frac1{\sqrt5} \begin{pmatrix}1\\2i\end{pmatrix}
 }
 $$
 Verifikasi:
@@ -296,11 +265,10 @@ $$
 \frac15+\frac45=1
 $$
 
-b. Normalisasi $|b\rangle$
+**b. Normalisasi $|b\rangle$**
 $$
 \begin{aligned}
-\|b\|
-&=\sqrt{(2)(2)+(i)(-i)}\\
+\|b\| &=\sqrt{(2)(2)+(i)(-i)}\\
 &=\sqrt{4-i^2}\\
 &=\sqrt5
 \end{aligned}
@@ -308,9 +276,7 @@ $$
 Maka:
 $$
 \boxed{
-|b_{\text{norm}}\rangle
-=\frac1{\sqrt5}
-\begin{pmatrix}2\\-i\end{pmatrix}
+|b_{\text{norm}}\rangle =\frac1{\sqrt5} \begin{pmatrix}2\\-i\end{pmatrix}
 }
 $$
 Verifikasi:
@@ -322,17 +288,13 @@ $$
 
 Diketahui:
 $$
-|c\rangle=
-\frac12|0\rangle+
-\frac{\sqrt3}{2}e^{i\pi/4}|1\rangle
+|c\rangle= \frac12|0\rangle+ \frac{\sqrt3}{2}e^{i\pi/4}|1\rangle
 $$
 
-a. Memeriksa normalisasi
+**a. Memeriksa normalisasi**
 $$
 \begin{aligned}
-\langle c|c\rangle
-&=\left|\frac12\right|^2+
-\left|\frac{\sqrt3}{2}e^{i\pi/4}\right|^2\\
+\langle c|c\rangle &=\left|\frac12\right|^2+ \left|\frac{\sqrt3}{2}e^{i\pi/4}\right|^2\\
 &=\frac14+\frac34|e^{i\pi/4}|^2\\
 &=\frac14+\frac34(1)\\
 &=\boxed{1}
@@ -340,21 +302,19 @@ $$
 $$
 Jadi state sudah ternormalisasi.
 
-b. Probabilitas $P(0)$
+**b. Probabilitas $P(0)$**
 $$
 \begin{aligned}
-P(0)
-&=|\langle0|c\rangle|^2\\
+P(0) &=|\langle0|c\rangle|^2\\
 &=\left|\frac12\right|^2\\
 &=\boxed{\frac14=25\%}
 \end{aligned}
 $$
 
-c. Probabilitas $P(1)$
+**c. Probabilitas $P(1)$**
 $$
 \begin{aligned}
-P(1)
-&=|\langle1|c\rangle|^2\\
+P(1) &=|\langle1|c\rangle|^2\\
 &=\left|\frac{\sqrt3}{2}e^{i\pi/4}\right|^2\\
 &=\frac34(1)\\
 &=\boxed{\frac34=75\%}
@@ -370,12 +330,10 @@ $$
 
 Diketahui:
 $$
-|+\rangle=\frac1{\sqrt2}
-\begin{pmatrix}1\\1\end{pmatrix}
+|+\rangle=\frac1{\sqrt2} \begin{pmatrix}1\\1\end{pmatrix}
 $$
 $$
-|-\rangle=\frac1{\sqrt2}
-\begin{pmatrix}1\\-1\end{pmatrix}
+|-\rangle=\frac1{\sqrt2} \begin{pmatrix}1\\-1\end{pmatrix}
 $$
 
 Koefisien:
@@ -384,9 +342,7 @@ c_+=\langle+|c\rangle
 $$
 $$
 \begin{aligned}
-c_+
-&=\frac1{\sqrt2}
-\left(\frac12+\frac{\sqrt3}{2}e^{i\pi/4}\right)\\
+c_+ &=\frac1{\sqrt2} \left(\frac12+\frac{\sqrt3}{2}e^{i\pi/4}\right)\\
 &=\boxed{\frac{1+\sqrt3e^{i\pi/4}}{2\sqrt2}}
 \end{aligned}
 $$
@@ -397,9 +353,7 @@ c_-=\langle-|c\rangle
 $$
 $$
 \begin{aligned}
-c_-
-&=\frac1{\sqrt2}
-\left(\frac12-\frac{\sqrt3}{2}e^{i\pi/4}\right)\\
+c_- &=\frac1{\sqrt2} \left(\frac12-\frac{\sqrt3}{2}e^{i\pi/4}\right)\\
 &=\boxed{\frac{1-\sqrt3e^{i\pi/4}}{2\sqrt2}}
 \end{aligned}
 $$
@@ -407,18 +361,14 @@ $$
 Maka:
 $$
 \boxed{
-|c\rangle=
-\frac{1+\sqrt3e^{i\pi/4}}{2\sqrt2}|+\rangle
-+
-\frac{1-\sqrt3e^{i\pi/4}}{2\sqrt2}|-\rangle
+|c\rangle= \frac{1+\sqrt3e^{i\pi/4}}{2\sqrt2}|+\rangle + \frac{1-\sqrt3e^{i\pi/4}}{2\sqrt2}|-\rangle
 }
 $$
 
-a. Menghitung $P(+)$
+**a. Menghitung $P(+)$**
 $$
 \begin{aligned}
-P(+)
-&=|c_+|^2\\
+P(+) &=|c_+|^2\\
 &=\frac18|1+\sqrt3e^{i\pi/4}|^2\\
 &=\frac18\left(1+3+2\sqrt3\cos\frac\pi4\right)\\
 &=\frac18(4+\sqrt6)
@@ -428,11 +378,10 @@ $$
 \boxed{P(+)=\frac{4+\sqrt6}{8}\approx80{,}62\%}
 $$
 
-b. Menghitung $P(-)$
+**b. Menghitung $P(-)$**
 $$
 \begin{aligned}
-P(-)
-&=|c_-|^2\\
+P(-) &=|c_-|^2\\
 &=\frac18|1-\sqrt3e^{i\pi/4}|^2\\
 &=\frac18\left(1+3-2\sqrt3\cos\frac\pi4\right)\\
 &=\frac18(4-\sqrt6)
@@ -445,8 +394,7 @@ $$
 Verifikasi:
 $$
 \begin{aligned}
-P(+)+P(-)
-&=\frac{4+\sqrt6}{8}+\frac{4-\sqrt6}{8}\\
+P(+)+P(-) &=\frac{4+\sqrt6}{8}+\frac{4-\sqrt6}{8}\\
 &=\frac88\\
 &=\boxed{1}
 \end{aligned}
@@ -459,34 +407,28 @@ $$
 \langle e_i|e_j\rangle=\delta_{ij}
 $$
 
-a. 
+**a.**
 $$
 \begin{aligned}
-\langle+|+\rangle
-&=\frac12(1\quad1)
-\begin{pmatrix}1\\1\end{pmatrix}\\
+\langle+|+\rangle &=\frac12(1\quad1) \begin{pmatrix}1\\1\end{pmatrix}\\
 &=\frac12(1+1)\\
 &=\boxed{1}
 \end{aligned}
 $$
 
-b. 
+**b.**
 $$
 \begin{aligned}
-\langle- |-\rangle
-&=\frac12(1\quad-1)
-\begin{pmatrix}1\\-1\end{pmatrix}\\
+\langle- |-\rangle &=\frac12(1\quad-1) \begin{pmatrix}1\\-1\end{pmatrix}\\
 &=\frac12(1+1)\\
 &=\boxed{1}
 \end{aligned}
 $$
 
-c. 
+**c.**
 $$
 \begin{aligned}
-\langle+|-\rangle
-&=\frac12(1\quad1)
-\begin{pmatrix}1\\-1\end{pmatrix}\\
+\langle+|-\rangle &=\frac12(1\quad1) \begin{pmatrix}1\\-1\end{pmatrix}\\
 &=\frac12(1-1)\\
 &=\boxed{0}
 \end{aligned}
@@ -522,45 +464,39 @@ $$
 M^\dagger=(M^*)^T
 $$
 
-a. Matriks $A$
+**a. Matriks $A$**
 $$
-A^*=
-\begin{pmatrix}
+A^*= \begin{pmatrix}
 2&1+i\\
 1-i&3
 \end{pmatrix}
 $$
 $$
 \boxed{
-A^\dagger=
-\begin{pmatrix}
+A^\dagger= \begin{pmatrix}
 2&1-i\\
 1+i&3
 \end{pmatrix}
 }
 $$
 
-b. Matriks $S$
+**b. Matriks $S$**
 $$
-S^*=
-\begin{pmatrix}1&0\\0&-i\end{pmatrix}
+S^*= \begin{pmatrix}1&0\\0&-i\end{pmatrix}
 $$
 $$
 \boxed{
-S^\dagger=
-\begin{pmatrix}1&0\\0&-i\end{pmatrix}
+S^\dagger= \begin{pmatrix}1&0\\0&-i\end{pmatrix}
 }
 $$
 
-c. Matriks $B$
+**c. Matriks $B$**
 $$
-B^*=
-\begin{pmatrix}1&1\\0&1\end{pmatrix}
+B^*= \begin{pmatrix}1&1\\0&1\end{pmatrix}
 $$
 $$
 \boxed{
-B^\dagger=
-\begin{pmatrix}1&0\\1&1\end{pmatrix}
+B^\dagger= \begin{pmatrix}1&0\\1&1\end{pmatrix}
 }
 $$
 
@@ -574,25 +510,19 @@ $$
 \text{Unitary: }M^\dagger M=I
 $$
 
-a. Matriks $A$
+**a. Matriks $A$**
 Hermitian:
 $$
-A^\dagger=
-\begin{pmatrix}2&1-i\\1+i&3\end{pmatrix}=A
+A^\dagger= \begin{pmatrix}2&1-i\\1+i&3\end{pmatrix}=A
 $$
 $$
 \boxed{A\text{ Hermitian}}
 $$
-
 Unitary:
 $$
 \begin{aligned}
-A^\dagger A
-&=
-\begin{pmatrix}2&1-i\\1+i&3\end{pmatrix}
-\begin{pmatrix}2&1-i\\1+i&3\end{pmatrix}\\
-&=
-\begin{pmatrix}
+A^\dagger A &= \begin{pmatrix}2&1-i\\1+i&3\end{pmatrix} \begin{pmatrix}2&1-i\\1+i&3\end{pmatrix}\\
+&= \begin{pmatrix}
 6&5-5i\\
 5+5i&11
 \end{pmatrix}
@@ -605,24 +535,18 @@ $$
 \boxed{A\text{ bukan Unitary}}
 $$
 
-b. Matriks $S$
+**b. Matriks $S$**
 Hermitian:
 $$
-S^\dagger=
-\begin{pmatrix}1&0\\0&-i\end{pmatrix}
-\neq S
+S^\dagger= \begin{pmatrix}1&0\\0&-i\end{pmatrix} \neq S
 $$
 $$
 \boxed{S\text{ bukan Hermitian}}
 $$
-
 Unitary:
 $$
 \begin{aligned}
-S^\dagger S
-&=
-\begin{pmatrix}1&0\\0&-i\end{pmatrix}
-\begin{pmatrix}1&0\\0&i\end{pmatrix}\\
+S^\dagger S &= \begin{pmatrix}1&0\\0&-i\end{pmatrix} \begin{pmatrix}1&0\\0&i\end{pmatrix}\\
 &=\begin{pmatrix}1&0\\0&1\end{pmatrix}\\
 &=I
 \end{aligned}
@@ -631,24 +555,18 @@ $$
 \boxed{S\text{ Unitary}}
 $$
 
-c. Matriks $B$
+**c. Matriks $B$**
 Hermitian:
 $$
-B^\dagger=
-\begin{pmatrix}1&0\\1&1\end{pmatrix}
-\neq B
+B^\dagger= \begin{pmatrix}1&0\\1&1\end{pmatrix} \neq B
 $$
 $$
 \boxed{B\text{ bukan Hermitian}}
 $$
-
 Unitary:
 $$
 \begin{aligned}
-B^\dagger B
-&=
-\begin{pmatrix}1&0\\1&1\end{pmatrix}
-\begin{pmatrix}1&1\\0&1\end{pmatrix}\\
+B^\dagger B &= \begin{pmatrix}1&0\\1&1\end{pmatrix} \begin{pmatrix}1&1\\0&1\end{pmatrix}\\
 &=\begin{pmatrix}1&1\\1&2\end{pmatrix}
 \end{aligned}
 $$
@@ -674,17 +592,12 @@ $$
 S=\begin{pmatrix}1&0\\0&i\end{pmatrix}
 $$
 $$
-|+\rangle=\frac1{\sqrt2}
-\begin{pmatrix}1\\1\end{pmatrix}
+|+\rangle=\frac1{\sqrt2} \begin{pmatrix}1\\1\end{pmatrix}
 $$
 $$
 \begin{aligned}
-S|+\rangle
-&=\frac1{\sqrt2}
-\begin{pmatrix}1&0\\0&i\end{pmatrix}
-\begin{pmatrix}1\\1\end{pmatrix}\\
-&=\frac1{\sqrt2}
-\begin{pmatrix}1\\i\end{pmatrix}
+S|+\rangle &=\frac1{\sqrt2} \begin{pmatrix}1&0\\0&i\end{pmatrix} \begin{pmatrix}1\\1\end{pmatrix}\\
+&=\frac1{\sqrt2} \begin{pmatrix}1\\i\end{pmatrix}
 \end{aligned}
 $$
 $$
@@ -695,45 +608,28 @@ $$
 
 Diketahui:
 $$
-H=\frac1{\sqrt2}
-\begin{pmatrix}1&1\\1&-1\end{pmatrix}
+H=\frac1{\sqrt2} \begin{pmatrix}1&1\\1&-1\end{pmatrix}
 $$
 $$
-Z=\begin{pmatrix}1&0\\0&-1\end{pmatrix}
-,\quad
-X=\begin{pmatrix}0&1\\1&0\end{pmatrix}
+Z=\begin{pmatrix}1&0\\0&-1\end{pmatrix} ,\quad X=\begin{pmatrix}0&1\\1&0\end{pmatrix}
 $$
 
-a. Menghitung $HZH$
+**a. Menghitung $HZH$**
 $$
 \begin{aligned}
-HZH
-&=\frac12
-\begin{pmatrix}1&1\\1&-1\end{pmatrix}
-\begin{pmatrix}1&0\\0&-1\end{pmatrix}
-\begin{pmatrix}1&1\\1&-1\end{pmatrix}\\
-&=\frac12
-\begin{pmatrix}1&-1\\1&1\end{pmatrix}
-\begin{pmatrix}1&1\\1&-1\end{pmatrix}\\
-&=\frac12
-\begin{pmatrix}0&2\\2&0\end{pmatrix}\\
+HZH &=\frac12 \begin{pmatrix}1&1\\1&-1\end{pmatrix} \begin{pmatrix}1&0\\0&-1\end{pmatrix} \begin{pmatrix}1&1\\1&-1\end{pmatrix}\\
+&=\frac12 \begin{pmatrix}1&-1\\1&1\end{pmatrix} \begin{pmatrix}1&1\\1&-1\end{pmatrix}\\
+&=\frac12 \begin{pmatrix}0&2\\2&0\end{pmatrix}\\
 &=\boxed{X}
 \end{aligned}
 $$
 
-b. Menghitung $HXH$
+**b. Menghitung $HXH$**
 $$
 \begin{aligned}
-HXH
-&=\frac12
-\begin{pmatrix}1&1\\1&-1\end{pmatrix}
-\begin{pmatrix}0&1\\1&0\end{pmatrix}
-\begin{pmatrix}1&1\\1&-1\end{pmatrix}\\
-&=\frac12
-\begin{pmatrix}1&1\\-1&1\end{pmatrix}
-\begin{pmatrix}1&1\\1&-1\end{pmatrix}\\
-&=\frac12
-\begin{pmatrix}2&0\\0&-2\end{pmatrix}\\
+HXH &=\frac12 \begin{pmatrix}1&1\\1&-1\end{pmatrix} \begin{pmatrix}0&1\\1&0\end{pmatrix} \begin{pmatrix}1&1\\1&-1\end{pmatrix}\\
+&=\frac12 \begin{pmatrix}1&1\\-1&1\end{pmatrix} \begin{pmatrix}1&1\\1&-1\end{pmatrix}\\
+&=\frac12 \begin{pmatrix}2&0\\0&-2\end{pmatrix}\\
 &=\boxed{Z}
 \end{aligned}
 $$
@@ -761,9 +657,7 @@ $$
 Hitung $XY$:
 $$
 \begin{aligned}
-XY
-&=\begin{pmatrix}0&1\\1&0\end{pmatrix}
-\begin{pmatrix}0&-i\\i&0\end{pmatrix}\\
+XY &=\begin{pmatrix}0&1\\1&0\end{pmatrix} \begin{pmatrix}0&-i\\i&0\end{pmatrix}\\
 &=\begin{pmatrix}i&0\\0&-i\end{pmatrix}\\
 &=iZ
 \end{aligned}
@@ -772,9 +666,7 @@ $$
 Hitung $YX$:
 $$
 \begin{aligned}
-YX
-&=\begin{pmatrix}0&-i\\i&0\end{pmatrix}
-\begin{pmatrix}0&1\\1&0\end{pmatrix}\\
+YX &=\begin{pmatrix}0&-i\\i&0\end{pmatrix} \begin{pmatrix}0&1\\1&0\end{pmatrix}\\
 &=\begin{pmatrix}-i&0\\0&i\end{pmatrix}\\
 &=-iZ
 \end{aligned}
@@ -783,8 +675,7 @@ $$
 Maka:
 $$
 \begin{aligned}
-[X,Y]
-&=XY-YX\\
+[X,Y] &=XY-YX\\
 &=iZ-(-iZ)\\
 &=\boxed{2iZ}
 \end{aligned}
@@ -792,34 +683,28 @@ $$
 
 ### 3.6 Membuktikan $X^2=Y^2=Z^2=I$
 
-a. 
+**a.**
 $$
 \begin{aligned}
-X^2
-&=\begin{pmatrix}0&1\\1&0\end{pmatrix}
-\begin{pmatrix}0&1\\1&0\end{pmatrix}\\
+X^2 &=\begin{pmatrix}0&1\\1&0\end{pmatrix} \begin{pmatrix}0&1\\1&0\end{pmatrix}\\
 &=\begin{pmatrix}1&0\\0&1\end{pmatrix}\\
 &=\boxed{I}
 \end{aligned}
 $$
 
-b. 
+**b.**
 $$
 \begin{aligned}
-Y^2
-&=\begin{pmatrix}0&-i\\i&0\end{pmatrix}
-\begin{pmatrix}0&-i\\i&0\end{pmatrix}\\
+Y^2 &=\begin{pmatrix}0&-i\\i&0\end{pmatrix} \begin{pmatrix}0&-i\\i&0\end{pmatrix}\\
 &=\begin{pmatrix}1&0\\0&1\end{pmatrix}\\
 &=\boxed{I}
 \end{aligned}
 $$
 
-c. 
+**c.**
 $$
 \begin{aligned}
-Z^2
-&=\begin{pmatrix}1&0\\0&-1\end{pmatrix}
-\begin{pmatrix}1&0\\0&-1\end{pmatrix}\\
+Z^2 &=\begin{pmatrix}1&0\\0&-1\end{pmatrix} \begin{pmatrix}1&0\\0&-1\end{pmatrix}\\
 &=\begin{pmatrix}1&0\\0&1\end{pmatrix}\\
 &=\boxed{I}
 \end{aligned}
@@ -839,17 +724,13 @@ $$
 
 Dari nomor 3.2:
 $$
-B^\dagger B=
-\begin{pmatrix}1&1\\1&2\end{pmatrix}
-\neq I
+B^\dagger B= \begin{pmatrix}1&1\\1&2\end{pmatrix} \neq I
 $$
 
 Buktikan dengan state:
 $$
-|\psi\rangle=|+\rangle=
-\frac1{\sqrt2}\begin{pmatrix}1\\1\end{pmatrix}
+|\psi\rangle=|+\rangle= \frac1{\sqrt2}\begin{pmatrix}1\\1\end{pmatrix}
 $$
-
 Norm awal:
 $$
 \|\psi\|=1
@@ -858,21 +739,15 @@ $$
 Kalikan dengan $B$:
 $$
 \begin{aligned}
-B|\psi\rangle
-&=\frac1{\sqrt2}
-\begin{pmatrix}1&1\\0&1\end{pmatrix}
-\begin{pmatrix}1\\1\end{pmatrix}\\
-&=\frac1{\sqrt2}
-\begin{pmatrix}2\\1\end{pmatrix}
+B|\psi\rangle &=\frac1{\sqrt2} \begin{pmatrix}1&1\\0&1\end{pmatrix} \begin{pmatrix}1\\1\end{pmatrix}\\
+&=\frac1{\sqrt2} \begin{pmatrix}2\\1\end{pmatrix}
 \end{aligned}
 $$
 
 Norm hasil:
 $$
 \begin{aligned}
-\|B|\psi\rangle\|
-&=\sqrt{\left|\frac2{\sqrt2}\right|^2+
-\left|\frac1{\sqrt2}\right|^2}\\
+\|B|\psi\rangle\| &=\sqrt{\left|\frac2{\sqrt2}\right|^2+ \left|\frac1{\sqrt2}\right|^2}\\
 &=\sqrt{2+\frac12}\\
 &=\boxed{\sqrt{\frac52}\neq1}
 \end{aligned}
@@ -905,7 +780,7 @@ $$
 Y=\begin{pmatrix}0&-i\\i&0\end{pmatrix}
 $$
 
-a. Mencari eigenvalue
+**a. Mencari eigenvalue**
 $$
 \begin{aligned}
 \det(Y-\lambda I)&=0\\
@@ -919,17 +794,13 @@ $$
 \boxed{\lambda_1=1,\quad\lambda_2=-1}
 $$
 
-b. Eigenvector untuk $\lambda=+1$
+**b. Eigenvector untuk $\lambda=+1$**
 $$
 (Y-I)|v\rangle=0
 $$
 $$
-\begin{pmatrix}-1&-i\\i&-1\end{pmatrix}
-\begin{pmatrix}x\\y\end{pmatrix}
-=
-\begin{pmatrix}0\\0\end{pmatrix}
+\begin{pmatrix}-1&-i\\i&-1\end{pmatrix} \begin{pmatrix}x\\y\end{pmatrix} = \begin{pmatrix}0\\0\end{pmatrix}
 $$
-
 Baris pertama:
 $$
 -x-iy=0
@@ -941,35 +812,27 @@ Ambil $y=i$, maka $x=1$.
 $$
 |v_+\rangle=\begin{pmatrix}1\\i\end{pmatrix}
 $$
-
 Norm:
 $$
 \begin{aligned}
-\|v_+\|
-&=\sqrt{|1|^2+|i|^2}\\
+\|v_+\| &=\sqrt{|1|^2+|i|^2}\\
 &=\sqrt2
 \end{aligned}
 $$
-
 Normalisasi:
 $$
 \boxed{
-|v_+\rangle=\frac1{\sqrt2}
-\begin{pmatrix}1\\i\end{pmatrix}
+|v_+\rangle=\frac1{\sqrt2} \begin{pmatrix}1\\i\end{pmatrix}
 }
 $$
 
-c. Eigenvector untuk $\lambda=-1$
+**c. Eigenvector untuk $\lambda=-1$**
 $$
 (Y+I)|v\rangle=0
 $$
 $$
-\begin{pmatrix}1&-i\\i&1\end{pmatrix}
-\begin{pmatrix}x\\y\end{pmatrix}
-=
-\begin{pmatrix}0\\0\end{pmatrix}
+\begin{pmatrix}1&-i\\i&1\end{pmatrix} \begin{pmatrix}x\\y\end{pmatrix} = \begin{pmatrix}0\\0\end{pmatrix}
 $$
-
 Baris pertama:
 $$
 x-iy=0
@@ -981,17 +844,14 @@ Ambil $y=-i$, maka $x=1$.
 $$
 |v_-\rangle=\begin{pmatrix}1\\-i\end{pmatrix}
 $$
-
 Norm:
 $$
 \|v_-\|=\sqrt{1+1}=\sqrt2
 $$
-
 Normalisasi:
 $$
 \boxed{
-|v_-\rangle=\frac1{\sqrt2}
-\begin{pmatrix}1\\-i\end{pmatrix}
+|v_-\rangle=\frac1{\sqrt2} \begin{pmatrix}1\\-i\end{pmatrix}
 }
 $$
 
@@ -1002,7 +862,7 @@ $$
 A=\begin{pmatrix}2&1-i\\1+i&3\end{pmatrix}
 $$
 
-a. Mencari eigenvalue
+**a. Mencari eigenvalue**
 $$
 \det(A-\lambda I)=0
 $$
@@ -1015,12 +875,10 @@ $$
 (2-\lambda)(3-\lambda)-(1-i)(1+i)&=0
 \end{aligned}
 $$
-
 Karena:
 $$
 (1-i)(1+i)=1-i^2=2
 $$
-
 Maka:
 $$
 \begin{aligned}
@@ -1034,17 +892,13 @@ $$
 \boxed{\lambda_1=1,\quad\lambda_2=4}
 $$
 
-b. Eigenvector untuk $\lambda=1$
+**b. Eigenvector untuk $\lambda=1$**
 $$
 (A-I)|v_1\rangle=0
 $$
 $$
-\begin{pmatrix}1&1-i\\1+i&2\end{pmatrix}
-\begin{pmatrix}x\\y\end{pmatrix}
-=
-\begin{pmatrix}0\\0\end{pmatrix}
+\begin{pmatrix}1&1-i\\1+i&2\end{pmatrix} \begin{pmatrix}x\\y\end{pmatrix} = \begin{pmatrix}0\\0\end{pmatrix}
 $$
-
 Baris pertama:
 $$
 x+(1-i)y=0
@@ -1054,39 +908,30 @@ x=(-1+i)y
 $$
 Ambil $y=1$, maka $x=-1+i$.
 $$
-|v_1\rangle=
-\begin{pmatrix}-1+i\\1\end{pmatrix}
+|v_1\rangle= \begin{pmatrix}-1+i\\1\end{pmatrix}
 $$
-
 Norm:
 $$
 \begin{aligned}
-\|v_1\|
-&=\sqrt{|-1+i|^2+|1|^2}\\
+\|v_1\| &=\sqrt{|-1+i|^2+|1|^2}\\
 &=\sqrt{1+1+1}\\
 &=\sqrt3
 \end{aligned}
 $$
-
 Normalisasi:
 $$
 \boxed{
-|v_1\rangle=\frac1{\sqrt3}
-\begin{pmatrix}-1+i\\1\end{pmatrix}
+|v_1\rangle=\frac1{\sqrt3} \begin{pmatrix}-1+i\\1\end{pmatrix}
 }
 $$
 
-c. Eigenvector untuk $\lambda=4$
+**c. Eigenvector untuk $\lambda=4$**
 $$
 (A-4I)|v_2\rangle=0
 $$
 $$
-\begin{pmatrix}-2&1-i\\1+i&-1\end{pmatrix}
-\begin{pmatrix}x\\y\end{pmatrix}
-=
-\begin{pmatrix}0\\0\end{pmatrix}
+\begin{pmatrix}-2&1-i\\1+i&-1\end{pmatrix} \begin{pmatrix}x\\y\end{pmatrix} = \begin{pmatrix}0\\0\end{pmatrix}
 $$
-
 Baris pertama:
 $$
 -2x+(1-i)y=0
@@ -1096,29 +941,24 @@ x=\frac{1-i}{2}y
 $$
 Ambil $y=2$, maka $x=1-i$.
 $$
-|v_2\rangle=
-\begin{pmatrix}1-i\\2\end{pmatrix}
+|v_2\rangle= \begin{pmatrix}1-i\\2\end{pmatrix}
 $$
-
 Norm:
 $$
 \begin{aligned}
-\|v_2\|
-&=\sqrt{|1-i|^2+|2|^2}\\
+\|v_2\| &=\sqrt{|1-i|^2+|2|^2}\\
 &=\sqrt{2+4}\\
 &=\sqrt6
 \end{aligned}
 $$
-
 Normalisasi:
 $$
 \boxed{
-|v_2\rangle=\frac1{\sqrt6}
-\begin{pmatrix}1-i\\2\end{pmatrix}
+|v_2\rangle=\frac1{\sqrt6} \begin{pmatrix}1-i\\2\end{pmatrix}
 }
 $$
 
-d. Apakah eigenvalue real?
+**d. Apakah eigenvalue real?**
 $$
 \lambda_1=1,\qquad\lambda_2=4
 $$
@@ -1135,46 +975,33 @@ $$
 
 Diketahui:
 $$
-|v_1\rangle=\frac1{\sqrt3}
-\begin{pmatrix}-1+i\\1\end{pmatrix}
+|v_1\rangle=\frac1{\sqrt3} \begin{pmatrix}-1+i\\1\end{pmatrix}
 $$
 $$
-|v_2\rangle=\frac1{\sqrt6}
-\begin{pmatrix}1-i\\2\end{pmatrix}
+|v_2\rangle=\frac1{\sqrt6} \begin{pmatrix}1-i\\2\end{pmatrix}
 $$
-
 Bra:
 $$
-\langle v_1|=\frac1{\sqrt3}
-\begin{pmatrix}-1-i&1\end{pmatrix}
+\langle v_1|=\frac1{\sqrt3} \begin{pmatrix}-1-i&1\end{pmatrix}
 $$
-
 Inner product:
 $$
 \begin{aligned}
-\langle v_1|v_2\rangle
-&=\frac1{\sqrt{18}}
-\begin{pmatrix}-1-i&1\end{pmatrix}
-\begin{pmatrix}1-i\\2\end{pmatrix}\\
-&=\frac1{\sqrt{18}}
-[(-1-i)(1-i)+2]
+\langle v_1|v_2\rangle &=\frac1{\sqrt{18}} \begin{pmatrix}-1-i&1\end{pmatrix} \begin{pmatrix}1-i\\2\end{pmatrix}\\
+&=\frac1{\sqrt{18}} [(-1-i)(1-i)+2]
 \end{aligned}
 $$
-
 Hitung:
 $$
 \begin{aligned}
-(-1-i)(1-i)
-&=-1+i-i+i^2\\
+(-1-i)(1-i) &=-1+i-i+i^2\\
 &=-2
 \end{aligned}
 $$
-
 Maka:
 $$
 \begin{aligned}
-\langle v_1|v_2\rangle
-&=\frac1{\sqrt{18}}(-2+2)\\
+\langle v_1|v_2\rangle &=\frac1{\sqrt{18}}(-2+2)\\
 &=\boxed{0}
 \end{aligned}
 $$
@@ -1186,8 +1013,7 @@ $$
 
 Diketahui:
 $$
-H=\frac1{\sqrt2}
-\begin{pmatrix}1&1\\1&-1\end{pmatrix}
+H=\frac1{\sqrt2} \begin{pmatrix}1&1\\1&-1\end{pmatrix}
 $$
 $$
 \det(H-\lambda I)=0
@@ -1198,8 +1024,7 @@ $$
 \frac1{\sqrt2}-\lambda&\frac1{\sqrt2}\\
 \frac1{\sqrt2}&-\frac1{\sqrt2}-\lambda
 \end{vmatrix}&=0\\
-\left(\frac1{\sqrt2}-\lambda\right)
-\left(-\frac1{\sqrt2}-\lambda\right)-\frac12&=0\\
+\left(\frac1{\sqrt2}-\lambda\right) \left(-\frac1{\sqrt2}-\lambda\right)-\frac12&=0\\
 \lambda^2-\frac12-\frac12&=0\\
 \lambda^2-1&=0\\
 (\lambda-1)(\lambda+1)&=0
@@ -1215,52 +1040,34 @@ Diketahui:
 $$
 Z=\begin{pmatrix}1&0\\0&-1\end{pmatrix}
 $$
-
 Eigenvalue dan eigenvector:
 $$
 \lambda_1=+1,\quad
-|v_1\rangle=|0\rangle=
-\begin{pmatrix}1\\0\end{pmatrix}
+|v_1\rangle=|0\rangle= \begin{pmatrix}1\\0\end{pmatrix}
 $$
 $$
 \lambda_2=-1,\quad
-|v_2\rangle=|1\rangle=
-\begin{pmatrix}0\\1\end{pmatrix}
+|v_2\rangle=|1\rangle= \begin{pmatrix}0\\1\end{pmatrix}
 $$
-
 Rumus spectral decomposition:
 $$
 Z=\sum_k\lambda_k|v_k\rangle\langle v_k|
 $$
-
 Substitusi:
 $$
 Z=|0\rangle\langle0|-|1\rangle\langle1|
 $$
-
 Hitung outer product:
 $$
-|0\rangle\langle0|=
-\begin{pmatrix}1\\0\end{pmatrix}
-\begin{pmatrix}1&0\end{pmatrix}
-=
-\begin{pmatrix}1&0\\0&0\end{pmatrix}
+|0\rangle\langle0|= \begin{pmatrix}1\\0\end{pmatrix} \begin{pmatrix}1&0\end{pmatrix} = \begin{pmatrix}1&0\\0&0\end{pmatrix}
 $$
 $$
-|1\rangle\langle1|=
-\begin{pmatrix}0\\1\end{pmatrix}
-\begin{pmatrix}0&1\end{pmatrix}
-=
-\begin{pmatrix}0&0\\0&1\end{pmatrix}
+|1\rangle\langle1|= \begin{pmatrix}0\\1\end{pmatrix} \begin{pmatrix}0&1\end{pmatrix} = \begin{pmatrix}0&0\\0&1\end{pmatrix}
 $$
-
 Maka:
 $$
 \begin{aligned}
-Z&=
-\begin{pmatrix}1&0\\0&0\end{pmatrix}
--
-\begin{pmatrix}0&0\\0&1\end{pmatrix}\\
+Z&= \begin{pmatrix}1&0\\0&0\end{pmatrix} - \begin{pmatrix}0&0\\0&1\end{pmatrix}\\
 &=\begin{pmatrix}1&0\\0&-1\end{pmatrix}
 \end{aligned}
 $$
